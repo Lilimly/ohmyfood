@@ -1,0 +1,127 @@
+// font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
+
+$first_font: 'Montserrat';
+
+// colors
+// backgrounds colors
+$primary_color: #579c87;
+$secondary_color: #ffffff;
+$third_color: #fcdfdb;
+$fouth_color: #fff5fe;
+$fifth_color: #f9f9f9;
+$sixt_color: #fdfffd;
+
+// fonts colors
+$logo_color: #fdcb46;
+$first_menu: #3c1218;
+$second_menu: #c77412;
+$third_menu: #2b91f8;
+$fourth_menu: #72bf56;
+
+//menu color
+$background_color: (menu1:$third_color, menu2:$fouth_color, menu3:$fifth_color, menu4:$sixt_color);
+
+// icon colors
+$first_note_color: #f36d68;
+$second_note_color: #f78f6a;
+
+body
+{
+    margin: auto;
+}
+
+// header
+header
+{
+    font-family: $first_font;
+    background-color: $primary_color;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 120px;
+}
+
+header h1
+{
+    color: $logo_color;
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+}
+
+//main
+main
+{
+    background-color: $secondary_color;
+    margin: auto;
+}
+
+.menu
+{
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+section
+{
+    width: 240px;
+    height: 290px;
+    border: 2px solid rgba(64, 64, 64, 0.2);
+    box-shadow: 0 5px rgba(64, 64, 64, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+#menu1
+{
+    background-color: $third_color;
+}
+
+#menu2
+{
+    background-color: $fouth_color;
+}
+
+#menu3
+{
+    background-color: $fifth_color;
+}
+
+#menu4
+{
+    background-color: $sixt_color;
+}
+
+// footer
+footer
+{
+    margin: auto;
+    height: 90px;
+    font-family: $first_font;
+    background-color: $primary_color;
+    color: $logo_color;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#mentions
+{
+    padding-left: 30px;
+}
+
+#contact
+{
+    padding-right: 30px;
+}
+
+#contact a
+{
+    color: $logo_color;
+}
+
