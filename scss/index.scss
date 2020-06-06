@@ -65,7 +65,7 @@ main
     padding-bottom: 50px;
 }
 
-//section
+//section page d'accueil
 section
 {
     width: 240px;
@@ -86,29 +86,57 @@ section
     margin: 30px;
 }
 
-.menu a
+.menu1, .menu1 a
 {
+    background-color: $third_color;
+    color: $first_menu;
+    
+}
+
+.menu2, .menu2 a
+{
+    background-color: $fouth_color;
+    color: $second_menu;
+}
+
+.menu3, .menu3 a
+{
+    background-color: $fifth_color;
+    color: $third_menu;
+}
+
+.menu4, .menu4 a
+{
+    background-color: $sixt_color;
+    color: $fourth_menu;
+}
+
+#menu5
+{
+    background-color: gainsboro;
     color: $first_menu;
 }
 
-#menu1
+// sections des menu
+.title
 {
-    background-color: $third_color;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
 }
 
-#menu2
+.carte
 {
-    background-color: $fouth_color;
+    margin: auto auto 30px auto;
+    height: auto;
+    width: 80%;
 }
 
-#menu3
+.bottom_title
 {
-    background-color: $fifth_color;
-}
-
-#menu4
-{
-    background-color: $sixt_color;
+    display: flex;
+    justify-content: center;
 }
 
 //aside
