@@ -38,6 +38,7 @@ header
     background-color: $primary_color;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     height: 120px;
 }
@@ -48,6 +49,9 @@ header h1
     font-size: 2em;
     font-weight: bold;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 //main
@@ -55,15 +59,13 @@ main
 {
     background-color: $secondary_color;
     margin: auto;
-}
-
-.menu
-{
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 30px;
+    padding-bottom: 50px;
 }
 
+//section
 section
 {
     width: 240px;
@@ -75,6 +77,18 @@ section
     flex-direction: column;
     justify-content: center;
     margin: 15px;
+}
+
+.menu
+{
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.menu a
+{
+    color: $first_menu;
 }
 
 #menu1
@@ -95,6 +109,21 @@ section
 #menu4
 {
     background-color: $sixt_color;
+}
+
+//aside
+aside
+{
+    background-color: $primary_color;
+    color: $logo_color;
+    width: 264px;
+    height: 44px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
 }
 
 // footer
@@ -118,10 +147,21 @@ footer
 #contact
 {
     padding-right: 30px;
+    
 }
 
-#contact a
+a
 {
     color: $logo_color;
+    text-decoration: none;
+}
+
+// icon
+.icon_music
+{
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    color: $first_note_color; 
 }
 
