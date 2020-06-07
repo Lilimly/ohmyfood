@@ -26,6 +26,11 @@ $background_color: (menu1:$third_color, menu2:$fouth_color, menu3:$fifth_color, 
 $first_note_color: #f36d68;
 $second_note_color: #f78f6a;
 
+//animation
+$anim-dur: 1000ms;
+$anim-delay: 200ms;
+$shake-intensity: 5%;
+
 body
 {
     margin: auto;
@@ -115,6 +120,12 @@ section
 {
     background-color: gainsboro;
     color: $first_menu;
+    padding: 20px;
+}
+
+#menu5 a
+{
+    color: $primary_color;
 }
 
 // sections des menu
@@ -154,6 +165,51 @@ aside
     border-radius: 10px;
 }
 
+aside h2
+{
+    color:  $logo_color;
+    text-align: center;
+}
+
+  /* loading dots */
+  
+.loading:after 
+{
+    content: ' .';
+    animation: dots 2s backwards infinite;
+}
+  
+  @keyframes dots 
+  {
+    0%, 20% 
+    {
+      color: rgba(0,0,0,0);
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);
+    }
+
+    40% 
+    {
+      color: $logo_color;
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);
+    }
+
+    60% {
+      text-shadow:
+        .25em 0 0 $logo_color,
+        .5em 0 0 rgba(0,0,0,0);
+    }
+
+    80%, 100% {
+      text-shadow:
+        .25em 0 0 $logo_color,
+        .5em 0 0 $logo_color;
+    }
+}
+  
 // footer
 footer
 {
@@ -167,15 +223,28 @@ footer
     text-align: center;
 }
 
-#mentions
+.contact
 {
-    padding-left: 30px;
+    padding: 15px;
 }
 
-#contact
+.anim {
+    &__group{
+        &:hover
+        {
+            animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 2;
+        }
+    }
+}
+
+@keyframes headshake 
 {
-    padding-right: 30px;
-    
+    25% {
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        transform: translateX($shake-intensity * -1);
+    }
 }
 
 a

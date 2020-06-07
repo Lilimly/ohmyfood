@@ -73,6 +73,11 @@ section {
 #menu5 {
   background-color: gainsboro;
   color: #3c1218;
+  padding: 20px;
+}
+
+#menu5 a {
+  color: #579c87;
 }
 
 .title {
@@ -106,6 +111,34 @@ aside {
   border-radius: 10px;
 }
 
+aside h2 {
+  color: #fdcb46;
+  text-align: center;
+}
+
+/* loading dots */
+.loading:after {
+  content: ' .';
+  animation: dots 2s backwards infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fdcb46;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%, 100% {
+    text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 #fdcb46;
+  }
+}
+
 footer {
   margin: auto;
   height: 90px;
@@ -117,12 +150,21 @@ footer {
   text-align: center;
 }
 
-#mentions {
-  padding-left: 30px;
+.contact {
+  padding: 15px;
 }
 
-#contact {
-  padding-right: 30px;
+.anim__group:hover {
+  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
 }
 
 a {
