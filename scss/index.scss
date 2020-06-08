@@ -45,7 +45,7 @@ header
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 120px;
+    height: 90px;
 }
 
 header h1
@@ -67,7 +67,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 //section page d'accueil
@@ -81,7 +81,7 @@ section
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 15px;
+    margin: 20px;
 }
 
 .menu
@@ -214,27 +214,27 @@ aside h2
 footer
 {
     margin: auto;
-    height: 90px;
+    height: 70px;
     font-family: $first_font;
     background-color: $primary_color;
     color: $logo_color;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    bottom: 0;
     text-align: center;
 }
 
 .contact
 {
-    padding: 15px;
+    padding: 0px 30px 0px 30px;
 }
 
 .anim {
-    &__group{
         &:hover
         {
-            animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 2;
+            animation: headshake 120ms cubic-bezier(.4,.1,.6,.9) 2;
         }
-    }
 }
 
 @keyframes headshake 
@@ -262,3 +262,28 @@ a
     color: $first_note_color; 
 }
 
+// responsive
+@media all and (max-width: 680px)
+{
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    aside
+    {
+        margin-top: 30px;
+    }
+
+    footer
+    {
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        font-size: 0.9em;
+        padding-bottom: 15px;
+    }
+}

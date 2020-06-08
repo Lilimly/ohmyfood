@@ -10,7 +10,7 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 120px;
+  height: 90px;
 }
 
 header h1 {
@@ -29,7 +29,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 section {
@@ -41,7 +41,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15px;
+  margin: 20px;
 }
 
 .menu {
@@ -141,21 +141,23 @@ aside h2 {
 
 footer {
   margin: auto;
-  height: 90px;
+  height: 70px;
   font-family: "Montserrat";
   background-color: #579c87;
   color: #fdcb46;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  bottom: 0;
   text-align: center;
 }
 
 .contact {
-  padding: 15px;
+  padding: 0px 30px 0px 30px;
 }
 
-.anim__group:hover {
-  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+.anim:hover {
+  animation: headshake 120ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
 
 @keyframes headshake {
@@ -177,5 +179,24 @@ a {
   height: 50px;
   font-size: 2em;
   color: #f36d68;
+}
+
+@media all and (max-width: 680px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  aside {
+    margin-top: 30px;
+  }
+  footer {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    font-size: 0.9em;
+    padding-bottom: 15px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
