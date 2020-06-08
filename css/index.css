@@ -60,9 +60,21 @@ section {
   color: #c77412;
 }
 
+#color2 {
+  color: #a56799;
+}
+
+#color3 {
+  color: #6e4ccc;
+}
+
 .menu3, .menu3 a, #page3 {
   background-color: #f9f9f9;
   color: #2b91f8;
+}
+
+#menu3_color, #menu4_color {
+  color: #000000;
 }
 
 .menu4, .menu4 a, #page4 {
@@ -70,13 +82,13 @@ section {
   color: #72bf56;
 }
 
-#menu5 {
+#page5 {
   background-color: gainsboro;
   color: #3c1218;
   padding: 20px;
 }
 
-#menu5 a {
+#page5 a {
   color: #579c87;
 }
 
@@ -96,6 +108,12 @@ section {
 .bottom_title {
   display: flex;
   justify-content: center;
+}
+
+.bottom_title span {
+  margin: auto 15px auto 0px;
+  height: 35px;
+  width: 35px;
 }
 
 #page1, #page2, #page3, #page4 {
@@ -166,7 +184,7 @@ footer {
 }
 
 .anim:hover {
-  animation: headshake 120ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
 
 @keyframes headshake {
@@ -184,10 +202,40 @@ a {
 }
 
 .icon_music {
-  width: 50px;
-  height: 50px;
   font-size: 2em;
-  color: #f36d68;
+  background-image: linear-gradient(120deg, #f36d68 55%, #f78f6a 45%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade1 {
+  background-image: linear-gradient(20deg, #c77412 30%, #905bfd 70%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade2 {
+  background-image: linear-gradient(20deg, #0431df 30%, #518cf0 50%, #0887fb 20%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade3 {
+  background-image: linear-gradient(20deg, #3d9339, #bfff7e);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media all and (max-width: 680px) {
