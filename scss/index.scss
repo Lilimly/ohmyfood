@@ -91,26 +91,26 @@ section
     margin: 30px;
 }
 
-.menu1, .menu1 a
+.menu1, .menu1 a, #page1
 {
     background-color: $third_color;
     color: $first_menu;
     
 }
 
-.menu2, .menu2 a
+.menu2, .menu2 a, #page2
 {
     background-color: $fouth_color;
     color: $second_menu;
 }
 
-.menu3, .menu3 a
+.menu3, .menu3 a, #page3
 {
     background-color: $fifth_color;
     color: $third_menu;
 }
 
-.menu4, .menu4 a
+.menu4, .menu4 a, #page4
 {
     background-color: $sixt_color;
     color: $fourth_menu;
@@ -149,6 +149,19 @@ section
     display: flex;
     justify-content: center;
 }
+
+// pages menu
+#page1, #page2, #page3, #page4
+{
+    padding: 30px 100px 30px 100px;
+}
+
+.dish
+{
+    display: flex;
+	justify-content: space-between;
+}
+
 
 //aside
 aside
@@ -271,6 +284,23 @@ a
         flex-direction: column;
         margin: auto;
     }
+
+    #page1, #page2, #page3, #page4
+{
+    padding: 5px;
+}
+
+    .dish
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price
+{
+    font-weight: bold;
+}
 
     aside
     {
