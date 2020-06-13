@@ -73,8 +73,8 @@ section
 {
     width: 240px;
     height: 290px;
-    border: 2px solid rgba(64, 64, 64, 0.2);
-    box-shadow: 0 5px rgba(64, 64, 64, 0.2);
+    box-shadow: 0 0 10px #bbba;
+    -webkit-box-shadow: 0 0 10px #bbba;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,6 @@ section
 {
     background-color: $third_color;
     color: $first_menu;
-    
 }
 
 // Menu 2
@@ -292,22 +291,20 @@ a
 // icon
 .icon_music
 {
-  
     font-size: 2em;
-    background-image: linear-gradient(120deg, $first_note_color 55%, $second_note_color 45%);
-    background-size: 100%;
-    background-repeat: repeat;
+    display: inline-block;
+    background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
     background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
-
-
-
+     
 // Dégradé couleur
 .degrade1
 {
-    background-image: linear-gradient(20deg, $second_menu 30%, #905bfd 70%);
+    background-image: linear-gradient(0.25turn, $second_menu 30%, #905bfd 70%);
     background-size: 100%;
     background-repeat: repeat;
     background-clip: text;
@@ -317,7 +314,7 @@ a
 
 .degrade2
 {
-    background-image: linear-gradient(20deg, #0431df 30%, #518cf0 50%, #0887fb 20%);
+    background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
     background-size: 100%;
     background-repeat: repeat;
     background-clip: text;
@@ -328,7 +325,7 @@ a
 
 .degrade3
 {
-    background-image: linear-gradient(20deg, #3d9339, #bfff7e);
+    background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
     background-size: 100%;
     background-repeat: repeat;
     background-clip: text;
@@ -347,21 +344,21 @@ a
     }
 
     #page1, #page2, #page3, #page4
-{
-    padding: 5px;
-}
+    {
+        padding: 5px;
+    }
 
-    .dish
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        .dish
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.price
-{
-    font-weight: bold;
-}
+    .price
+    {
+        font-weight: bold;
+    }
 
     aside
     {
