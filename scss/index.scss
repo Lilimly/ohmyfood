@@ -1,7 +1,8 @@
 // font
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
 
-$first_font: 'Montserrat';
+$main_font: 'Montserrat';
+$first_font: 'Devonshire', cursive;
 
 // colors
 // backgrounds colors
@@ -34,10 +35,21 @@ body
     margin: auto;
 }
 
+h2
+{
+    font-size: 2em;
+}
+
+h3
+{
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
 // header
 header
 {
-    font-family: $first_font;
+    font-family: $main_font;
     background-color: $primary_color;
     display: flex;
     justify-content: center;
@@ -94,6 +106,13 @@ section
 {
     background-color: $third_color;
     color: $first_menu;
+    font-family: 'Kalam', cursive;
+    font-weight: lighter;
+}
+
+.font1
+{
+    font-family: $first_font;
 }
 
 // Menu 2
@@ -101,6 +120,8 @@ section
 {
     background-color: $fouth_color;
     color: $second_menu;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 100;
 }
 
 #color2
@@ -118,6 +139,7 @@ section
 {
     background-color: $fifth_color;
     color: $third_menu;
+    font-family: 'Kalam', cursive;
 }
 
 #menu3_color, #menu4_color
@@ -130,6 +152,7 @@ section
 {
     background-color: $sixt_color;
     color: $fourth_menu;
+    font-family: 'Kalam', cursive;
 }
 
 #page5
@@ -185,6 +208,11 @@ section
 	justify-content: space-between;
 }
 
+.price
+{
+    font-weight: bold;
+}
+
 //aside
 aside
 {
@@ -204,6 +232,7 @@ aside h2
 {
     color:  $logo_color;
     text-align: center;
+    font-size: 1.5em;
 }
 
   /* loading dots */
@@ -250,7 +279,7 @@ footer
 {
     margin: auto;
     height: 70px;
-    font-family: $first_font;
+    font-family: $main_font;
     background-color: $primary_color;
     color: $logo_color;
     display: flex;
@@ -258,6 +287,12 @@ footer
     position: sticky;
     bottom: 0;
     text-align: center;
+}
+
+footer h2
+{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .contact
@@ -304,6 +339,7 @@ a
 // Dégradé couleur
 .degrade1
 {
+    font-family: 'Kurale', serif;
     background-image: linear-gradient(0.25turn, $second_menu 30%, #905bfd 70%);
     background-size: 100%;
     background-repeat: repeat;
@@ -314,6 +350,7 @@ a
 
 .degrade2
 {
+    font-family: "Dancing Script", cursive;
     background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
     background-size: 100%;
     background-repeat: repeat;
@@ -325,6 +362,7 @@ a
 
 .degrade3
 {
+    font-family: 'Kaushan Script', cursive;
     background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
     background-size: 100%;
     background-repeat: repeat;
