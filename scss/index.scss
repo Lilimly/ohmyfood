@@ -437,6 +437,18 @@ a
     background-size: 100% 100%;
   }
 
+  .border5 {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  .border5:hover {
+    background-size: 100% 100%;
+  }
+
 // responsive
 @media all and (max-width: 680px)
 {
