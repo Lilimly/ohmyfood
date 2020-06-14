@@ -119,6 +119,17 @@ section
     font-family: $first_font;
 }
 
+h3 a {
+    color: #3c1218;
+    text-decoration: none;
+    background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  a:hover {
+    background-size: 100% 100%;
+  }
+
 // Menu 2
 .menu2, .menu2 a, #page2
 {
@@ -259,30 +270,30 @@ aside h2
 {
     0%, 20% 
     {
-    color: rgba(0,0,0,0);
-    text-shadow:
-    .25em 0 0 rgba(0,0,0,0),
-    .5em 0 0 rgba(0,0,0,0);
+        color: rgba(0,0,0,0);
+        text-shadow:
+        .25em 0 0 rgba(0,0,0,0),
+        .5em 0 0 rgba(0,0,0,0);
     }
 
     40% 
     {
-      color: $logo_color;
-      text-shadow:
+        color: $logo_color;
+        text-shadow:
         .25em 0 0 rgba(0,0,0,0),
         .5em 0 0 rgba(0,0,0,0);
     }
 
     60% {
-      text-shadow:
-        .25em 0 0 $logo_color,
-        .5em 0 0 rgba(0,0,0,0);
+        text-shadow:
+            .25em 0 0 $logo_color,
+            .5em 0 0 rgba(0,0,0,0);
     }
 
     80%, 100% {
-      text-shadow:
-        .25em 0 0 $logo_color,
-        .5em 0 0 $logo_color;
+        text-shadow:
+            .25em 0 0 $logo_color,
+            .5em 0 0 $logo_color;
     }
 }
   

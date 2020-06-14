@@ -70,6 +70,17 @@ section {
   font-family: "Devonshire", cursive;
 }
 
+h3 a {
+  color: #3c1218;
+  text-decoration: none;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s;
+}
+
+a:hover {
+  background-size: 100% 100%;
+}
+
 .menu2, .menu2 a, #page2 {
   background-color: #fff5fe;
   color: #c77412;
