@@ -70,17 +70,6 @@ section {
   font-family: "Devonshire", cursive;
 }
 
-h3 a {
-  color: #3c1218;
-  text-decoration: none;
-  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
-}
-
-a:hover {
-  background-size: 100% 100%;
-}
-
 .menu2, .menu2 a, #page2 {
   background-color: #fff5fe;
   color: #c77412;
@@ -286,6 +275,54 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.border1 {
+  color: #3c1218;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s;
+}
+
+.border1:hover {
+  background-size: 100% 100%;
+}
+
+#border2 {
+  color: #c77412;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s;
+}
+
+#border2:hover {
+  background-size: 100% 100%;
+}
+
+#border3 {
+  color: #a56799;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s;
+}
+
+#border3:hover {
+  background-size: 100% 100%;
+}
+
+#border4 {
+  color: #6e4ccc;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size .5s;
+}
+
+#border4:hover {
+  background-size: 100% 100%;
 }
 
 @media all and (max-width: 680px) {

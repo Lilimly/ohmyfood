@@ -20,6 +20,8 @@ $sixt_color: #fdfffd;
 $logo_color: #fdcb46;
 $first_menu: #3c1218;
 $second_menu: #c77412;
+$second_menu2: #a56799;
+$second_menu3: #6e4ccc;
 $third_menu: #2b91f8;
 $fourth_menu: #72bf56;
 
@@ -119,17 +121,6 @@ section
     font-family: $first_font;
 }
 
-h3 a {
-    color: #3c1218;
-    text-decoration: none;
-    background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: background-size .5s;
-  }
-  
-  a:hover {
-    background-size: 100% 100%;
-  }
-
 // Menu 2
 .menu2, .menu2 a, #page2
 {
@@ -141,12 +132,12 @@ h3 a {
 
 #color2
 {
-    color: #a56799;
+    color: $second_menu2;
 }
 
 #color3
 {
-    color: #6e4ccc;
+    color: $second_menu3;
 }
 
 // Menu 3
@@ -394,6 +385,57 @@ a
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+// Animations soulignage
+
+.border1 {
+    color: $first_menu;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to top, $first_menu 0%, $first_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  .border1:hover {
+    background-size: 100% 100%;
+  }
+
+
+#border2 {
+    color: $second_menu;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to top, $second_menu 0%, $second_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  #border2:hover {
+    background-size: 100% 100%;
+  }
+
+  #border3 {
+    color: $second_menu2;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to top, $second_menu2 0%, $second_menu2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  #border3:hover {
+    background-size: 100% 100%;
+  }
+
+  #border4 {
+    color: $second_menu3;
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to top, $second_menu3 0%, $second_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+  }
+  
+  #border4:hover {
+    background-size: 100% 100%;
+  }
 
 // responsive
 @media all and (max-width: 680px)
