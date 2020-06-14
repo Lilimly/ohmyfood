@@ -1,8 +1,11 @@
 // font
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,900i');
-
-$main_font: 'Montserrat';
+$main_font: 'Montserrat', sans-serif;
 $first_font: 'Devonshire', cursive;
+$second_font: 'Kalam', cursive;
+$third_font: 'Source Serif Pro', serif;
+$fourth_font: 'Kurale', serif;
+$fifth_font: "Dancing Script", cursive;
+$sixth_font: 'Kaushan Script', cursive;
 
 // colors
 // backgrounds colors
@@ -50,6 +53,7 @@ h3
 header
 {
     font-family: $main_font;
+    font-size: 1.3em;
     background-color: $primary_color;
     display: flex;
     justify-content: center;
@@ -106,7 +110,7 @@ section
 {
     background-color: $third_color;
     color: $first_menu;
-    font-family: 'Kalam', cursive;
+    font-family: $second_font;
     font-weight: lighter;
 }
 
@@ -120,7 +124,7 @@ section
 {
     background-color: $fouth_color;
     color: $second_menu;
-    font-family: 'Source Serif Pro', serif;
+    font-family: $third_font;
     font-weight: 100;
 }
 
@@ -139,7 +143,13 @@ section
 {
     background-color: $fifth_color;
     color: $third_menu;
-    font-family: 'Kalam', cursive;
+    font-family: $second_font;
+    
+}
+
+.menu3 h2, .menu4 h2
+{
+    font-weight: 300;
 }
 
 #menu3_color, #menu4_color
@@ -152,7 +162,7 @@ section
 {
     background-color: $sixt_color;
     color: $fourth_menu;
-    font-family: 'Kalam', cursive;
+    font-family: $second_font;
 }
 
 #page5
@@ -216,6 +226,7 @@ section
 //aside
 aside
 {
+    
     background-color: $primary_color;
     color: $logo_color;
     width: 264px;
@@ -230,13 +241,14 @@ aside
 
 aside h2
 {
-    color:  $logo_color;
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 1.2em;
     text-align: center;
-    font-size: 1.5em;
 }
 
   /* loading dots */
-  
+
 .loading:after 
 {
     content: ' .';
@@ -278,8 +290,7 @@ aside h2
 footer
 {
     margin: auto;
-    height: 70px;
-    font-family: $main_font;
+    height: 60px;
     background-color: $primary_color;
     color: $logo_color;
     display: flex;
@@ -291,8 +302,10 @@ footer
 
 footer h2
 {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-family: $main_font;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: auto;
 }
 
 .contact
@@ -339,7 +352,7 @@ a
 // Dégradé couleur
 .degrade1
 {
-    font-family: 'Kurale', serif;
+    font-family: $fourth_font;
     background-image: linear-gradient(0.25turn, $second_menu 30%, #905bfd 70%);
     background-size: 100%;
     background-repeat: repeat;
@@ -350,7 +363,7 @@ a
 
 .degrade2
 {
-    font-family: "Dancing Script", cursive;
+    font-family: $fifth_font;
     background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
     background-size: 100%;
     background-repeat: repeat;
@@ -362,7 +375,7 @@ a
 
 .degrade3
 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: $sixth_font;
     background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
     background-size: 100%;
     background-repeat: repeat;
