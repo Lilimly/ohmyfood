@@ -66,6 +66,17 @@ section {
   font-weight: lighter;
 }
 
+.menu1 .zoom {
+  transform: scale(0.8);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
+}
+
+.menu1 .zoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
+}
+
 .font1 {
   font-family: "Devonshire", cursive;
 }
@@ -75,6 +86,17 @@ section {
   color: #c77412;
   font-family: "Source Serif Pro", serif;
   font-weight: 100;
+}
+
+.menu2 .zoom {
+  transform: scale(0.8);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
+}
+
+.menu2 .zoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
 }
 
 #color2 {
@@ -95,6 +117,17 @@ section {
   font-weight: 300;
 }
 
+.menu3 .zoom {
+  transform: scale(0.8);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
+}
+
+.menu3 .zoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
+}
+
 #menu3_color, #menu4_color {
   color: #000000;
 }
@@ -103,6 +136,17 @@ section {
   background-color: #fdfffd;
   color: #72bf56;
   font-family: "Kalam", cursive;
+}
+
+.menu4 .zoom {
+  transform: scale(0.8);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
+}
+
+.menu4 .zoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
 }
 
 #page5 {
@@ -239,6 +283,7 @@ a {
 .icon_music {
   font-size: 2em;
   display: inline-block;
+  padding: 5px;
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
   background-clip: text;
   -webkit-background-clip: text;

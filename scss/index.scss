@@ -116,6 +116,19 @@ section
     font-weight: lighter;
 }
 
+.menu1 {
+    
+    .zoom {
+      transform: scale(0.8);
+      transition: transform 300ms ease-in-out;
+      opacity: 1;
+        &:hover {
+          transform: scale(1);
+          opacity: 0.3;
+    }
+  }
+  }
+
 .font1
 {
     font-family: $first_font;
@@ -129,6 +142,19 @@ section
     font-family: $third_font;
     font-weight: 100;
 }
+
+.menu2 {
+    
+    .zoom {
+      transform: scale(0.8);
+      transition: transform 300ms ease-in-out;
+      opacity: 1;
+        &:hover {
+          transform: scale(1);
+          opacity: 0.3;
+    }
+  }
+  }
 
 #color2
 {
@@ -154,6 +180,19 @@ section
     font-weight: 300;
 }
 
+.menu3 {
+    
+    .zoom {
+      transform: scale(0.8);
+      transition: transform 300ms ease-in-out;
+      opacity: 1;
+        &:hover {
+          transform: scale(1);
+          opacity: 0.3;
+    }
+  }
+  }
+
 #menu3_color, #menu4_color
 {
     color: #000000;
@@ -166,6 +205,19 @@ section
     color: $fourth_menu;
     font-family: $second_font;
 }
+
+.menu4 {
+    
+    .zoom {
+      transform: scale(0.8);
+      transition: transform 300ms ease-in-out;
+      opacity: 1;
+        &:hover {
+          transform: scale(1);
+          opacity: 0.3;
+    }
+  }
+  }
 
 #page5
 {
@@ -343,6 +395,7 @@ a
 {
     font-size: 2em;
     display: inline-block;
+    padding: 5px;
     background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
     background-clip: text;
     -webkit-background-clip: text;
