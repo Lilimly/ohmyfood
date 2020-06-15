@@ -379,9 +379,6 @@ a {
     justify-content: center;
     flex-direction: column;
   }
-  .price {
-    font-weight: bold;
-  }
   aside {
     margin-top: 30px;
   }
