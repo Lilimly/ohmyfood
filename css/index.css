@@ -251,7 +251,7 @@ a {
   text-decoration: none;
 }
 
-.icon_music {
+.icon_music .fas {
   font-size: 2em;
   display: inline-block;
   padding: 5px;
