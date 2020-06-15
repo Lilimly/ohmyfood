@@ -1,39 +1,4 @@
-// font
-$main_font: 'Montserrat', sans-serif;
-$first_font: 'Devonshire', cursive;
-$second_font: 'Kalam', cursive;
-$third_font: 'Source Serif Pro', serif;
-$fourth_font: 'Kurale', serif;
-$fifth_font: "Dancing Script", cursive;
-$sixth_font: 'Kaushan Script', cursive;
-
-// colors
-// backgrounds colors
-$primary_color: #579c87;
-$secondary_color: #ffffff;
-$third_color: #fcdfdb;
-$fouth_color: #fff5fe;
-$fifth_color: #f9f9f9;
-$sixt_color: #fdfffd;
-
-// fonts colors
-$logo_color: #fdcb46;
-$first_menu: #3c1218;
-$second_menu: #c77412;
-$second_menu2: #a56799;
-$second_menu3: #6e4ccc;
-$third_menu: #2b91f8;
-$fourth_menu: #72bf56;
-
-//menu color
-$background_color: (menu1:$third_color, menu2:$fouth_color, menu3:$fifth_color, menu4:$sixt_color);
-
-// icon colors
-$first_note_color: #f36d68;
-$second_note_color: #f78f6a;
-
-//animation
-$shake-intensity: 5%;
+@import "./utils/_variables.scss";
 
 body
 {
@@ -89,8 +54,8 @@ main
 //section page d'accueil
 section
 {
-    width: 240px;
-    height: 290px;
+    width: 260px;
+    height: 320px;
     box-shadow: 0 0 10px #bbba;
     -webkit-box-shadow: 0 0 10px #bbba;
     text-align: center;
@@ -107,6 +72,16 @@ section
     margin: 30px;
 }
 
+.menu h3
+{
+    font-size: 1.7em;
+}
+
+.menu h2
+{
+    font-size: 2em;
+}
+
 // Menu 1
 .menu1, .menu1 a, #page1
 {
@@ -115,19 +90,6 @@ section
     font-family: $second_font;
     font-weight: lighter;
 }
-
-.menu1 {
-    
-    .zoom {
-      transform: scale(0.8);
-      transition: transform 300ms ease-in-out;
-      opacity: 1;
-        &:hover {
-          transform: scale(1);
-          opacity: 0.3;
-    }
-  }
-  }
 
 .font1
 {
@@ -142,19 +104,6 @@ section
     font-family: $third_font;
     font-weight: 100;
 }
-
-.menu2 {
-    
-    .zoom {
-      transform: scale(0.8);
-      transition: transform 300ms ease-in-out;
-      opacity: 1;
-        &:hover {
-          transform: scale(1);
-          opacity: 0.3;
-    }
-  }
-  }
 
 #color2
 {
@@ -180,19 +129,6 @@ section
     font-weight: 300;
 }
 
-.menu3 {
-    
-    .zoom {
-      transform: scale(0.8);
-      transition: transform 300ms ease-in-out;
-      opacity: 1;
-        &:hover {
-          transform: scale(1);
-          opacity: 0.3;
-    }
-  }
-  }
-
 #menu3_color, #menu4_color
 {
     color: #000000;
@@ -205,19 +141,6 @@ section
     color: $fourth_menu;
     font-family: $second_font;
 }
-
-.menu4 {
-    
-    .zoom {
-      transform: scale(0.8);
-      transition: transform 300ms ease-in-out;
-      opacity: 1;
-        &:hover {
-          transform: scale(1);
-          opacity: 0.3;
-    }
-  }
-  }
 
 #page5
 {
@@ -402,6 +325,18 @@ a
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+// Animation zoom
+
+.zoom {
+    transform: scale(0.8);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+    &:hover {
+        transform: scale(1);
+        opacity: 0.3;
+}
 }
      
 // Dégradé couleur

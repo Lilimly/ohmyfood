@@ -42,8 +42,8 @@ main {
 }
 
 section {
-  width: 240px;
-  height: 290px;
+  width: 260px;
+  height: 320px;
   box-shadow: 0 0 10px #bbba;
   -webkit-box-shadow: 0 0 10px #bbba;
   text-align: center;
@@ -59,22 +59,19 @@ section {
   margin: 30px;
 }
 
+.menu h3 {
+  font-size: 1.7em;
+}
+
+.menu h2 {
+  font-size: 2em;
+}
+
 .menu1, .menu1 a, #page1 {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Kalam", cursive;
   font-weight: lighter;
-}
-
-.menu1 .zoom {
-  transform: scale(0.8);
-  transition: transform 300ms ease-in-out;
-  opacity: 1;
-}
-
-.menu1 .zoom:hover {
-  transform: scale(1);
-  opacity: 0.3;
 }
 
 .font1 {
@@ -86,17 +83,6 @@ section {
   color: #c77412;
   font-family: "Source Serif Pro", serif;
   font-weight: 100;
-}
-
-.menu2 .zoom {
-  transform: scale(0.8);
-  transition: transform 300ms ease-in-out;
-  opacity: 1;
-}
-
-.menu2 .zoom:hover {
-  transform: scale(1);
-  opacity: 0.3;
 }
 
 #color2 {
@@ -117,17 +103,6 @@ section {
   font-weight: 300;
 }
 
-.menu3 .zoom {
-  transform: scale(0.8);
-  transition: transform 300ms ease-in-out;
-  opacity: 1;
-}
-
-.menu3 .zoom:hover {
-  transform: scale(1);
-  opacity: 0.3;
-}
-
 #menu3_color, #menu4_color {
   color: #000000;
 }
@@ -136,17 +111,6 @@ section {
   background-color: #fdfffd;
   color: #72bf56;
   font-family: "Kalam", cursive;
-}
-
-.menu4 .zoom {
-  transform: scale(0.8);
-  transition: transform 300ms ease-in-out;
-  opacity: 1;
-}
-
-.menu4 .zoom:hover {
-  transform: scale(1);
-  opacity: 0.3;
 }
 
 #page5 {
@@ -290,6 +254,17 @@ a {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.zoom {
+  transform: scale(0.8);
+  transition: transform 300ms ease-in-out;
+  opacity: 1;
+}
+
+.zoom:hover {
+  transform: scale(1);
+  opacity: 0.3;
 }
 
 .degrade1 {
