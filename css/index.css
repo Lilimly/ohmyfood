@@ -36,8 +36,8 @@ main {
   background-color: #ffffff;
   margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   padding-bottom: 40px;
 }
 
@@ -48,8 +48,8 @@ section {
   -webkit-box-shadow: 0 0 10px #bbba;
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin: 20px;
 }
 
@@ -167,8 +167,8 @@ aside {
   height: 44px;
   margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
   border-radius: 10px;
 }
@@ -360,6 +360,7 @@ a {
 @media all and (max-width: 680px) {
   .menu {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: auto;
   }
@@ -368,8 +369,8 @@ a {
   }
   .dish {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
   }
   .price {
     font-weight: bold;
