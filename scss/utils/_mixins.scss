@@ -1,5 +1,4 @@
-// flex
-
+// Paramètres flex
 @mixin flex_column
 {
     display: flex;
@@ -17,6 +16,42 @@
 {
     display: flex;
 	justify-content: space-between;
+}
+
+// Paramètres header
+@mixin header
+{
+    font-family: $main_font;
+    font-size: 1.3em;
+    background-color: $primary_color;
+    text-align: center;
+    height: 90px;
+}
+
+@mixin header_h1
+{
+    color: $logo_color;
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+// Paramètres main
+@mixin main
+{
+    background-color: $secondary_color;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+// paramètres section
+@mixin section
+{
+    width: 260px;
+    height: 320px;
+    margin: 20px;
+    text-align: center;
 }
 
 // Paramètres menu 1
@@ -53,10 +88,58 @@
     font-family: $second_font;
 }
 
+// Paramètres icon_music
+@mixin icon_music
+{
+    font-size: 2em;
+    display: inline-block;
+    padding: 5px;
+}
+
+// Paramètres aside
+@mixin aside
+{
+    background-color: $primary_color;
+    color: $logo_color;
+    width: 264px;
+    height: 44px;
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@mixin aside_h2
+{
+    font-family: $main_font;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 // Paramètres mentions légales
 @mixin mentions
 {
     background-color: gainsboro;
     color: $first_menu;
     padding: 20px;
+}
+
+// Paramètres footer
+@mixin footer
+{
+    margin: auto;
+    height: 60px;
+    background-color: $primary_color;
+    color: $logo_color;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+@mixin footer_h2
+{
+    font-family: $main_font;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: auto;
 }

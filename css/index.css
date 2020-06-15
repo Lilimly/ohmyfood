@@ -2,8 +2,12 @@ body {
   margin: auto;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 h3 {
@@ -15,11 +19,11 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
   background-color: #579c87;
+  text-align: center;
+  height: 90px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  height: 90px;
 }
 
 header h1 {
@@ -27,30 +31,30 @@ header h1 {
   font-size: 2em;
   font-weight: bold;
   margin: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 main {
   background-color: #ffffff;
   margin: auto;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 40px;
 }
 
 section {
   width: 260px;
   height: 320px;
-  box-shadow: 0 0 10px #bbba;
-  -webkit-box-shadow: 0 0 10px #bbba;
+  margin: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 20px;
+  box-shadow: 0 0 10px #bbba;
+  -webkit-box-shadow: 0 0 10px #bbba;
 }
 
 .menu {
@@ -59,12 +63,12 @@ section {
   margin: 30px;
 }
 
-.menu h3 {
-  font-size: 1.7em;
-}
-
 .menu h2 {
   font-size: 2em;
+}
+
+.menu h3 {
+  font-size: 1.7em;
 }
 
 .menu1, .menu1 a, #page1 {
@@ -151,12 +155,16 @@ section {
   padding: 30px 100px 30px 100px;
 }
 
+#page1 h2, #page3 h2, #page4 h2 {
+  font-weight: 400;
+}
+
 .dish {
   display: flex;
   justify-content: space-between;
 }
 
-.price {
+#page1 .price {
   font-weight: bold;
 }
 
@@ -166,11 +174,11 @@ aside {
   width: 264px;
   height: 44px;
   margin: auto;
+  text-align: center;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
 }
 
 aside h2 {
@@ -180,7 +188,6 @@ aside h2 {
   text-align: center;
 }
 
-/* loading dots */
 .loading:after {
   content: ' .';
   animation: dots 2s backwards infinite;
@@ -208,11 +215,11 @@ footer {
   height: 60px;
   background-color: #579c87;
   color: #fdcb46;
-  display: flex;
-  justify-content: space-between;
   position: sticky;
   bottom: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer h2 {
