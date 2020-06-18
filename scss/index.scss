@@ -178,6 +178,28 @@ section
     font-weight: bold;
 }
 
+.subtitle
+{
+    display: flex;
+    
+}
+
+.line1
+{
+    display: inline-block;
+    height: 6px;
+    width: 260px;
+    margin: auto auto auto 0px;
+}
+
+.line2
+{
+    display: inline-block;
+    height: 6px;
+    width: 260px;
+    margin: auto 0px auto auto;
+}
+
 //aside
 aside
 {
@@ -402,13 +424,19 @@ a
 
     #page1, #page2, #page3, #page4
     {
-        padding: 5px;
+        padding: 10px;
     }
 
         .dish
     {
         @include flex_column;
     }
+
+    .line1, .line2
+{
+    width: 22%;
+    height: 80%;
+}
 
     aside
     {
