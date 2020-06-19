@@ -170,6 +170,8 @@ section {
 
 .subtitle {
   display: flex;
+  justify-content: center;
+  width: auto;
 }
 
 .line1 {
@@ -396,7 +398,7 @@ a {
   background-size: 100% 100%;
 }
 
-@media all and (max-width: 680px) {
+@media (max-width: 680px) {
   .menu {
     display: flex;
     justify-content: center;
@@ -404,7 +406,13 @@ a {
     margin: auto;
   }
   #page1, #page2, #page3, #page4 {
-    padding: 10px;
+    padding: 7px;
+  }
+  #page1 h1, #page2 h1, #page3 h1, #page4 h1 {
+    font-size: 2em;
+  }
+  #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
+    font-size: 1.3em;
   }
   .dish {
     display: flex;
@@ -425,6 +433,32 @@ a {
     position: sticky;
     font-size: 0.9em;
     padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 680px) {
+  .line1, .line2, .line3, .line4 {
+    width: 30%;
+    height: 60%;
+  }
+  #page1, #page2, #page3, #page4 {
+    padding: 30px;
+  }
+  #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (orientation: landscape) {
+  .line1, .line2, .line3, .line4 {
+    width: 30%;
+    height: 60%;
+  }
+  #page1, #page2, #page3, #page4 {
+    padding: 30px;
+  }
+  #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=index.css.map */
