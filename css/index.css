@@ -204,8 +204,8 @@ section {
 aside {
   background-color: #579c87;
   color: #fdcb46;
-  width: 264px;
-  height: 44px;
+  width: 270px;
+  height: 50px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
@@ -217,7 +217,7 @@ aside {
 aside h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
 }
 
