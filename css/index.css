@@ -46,14 +46,14 @@ main {
 }
 
 section {
-  width: 260px;
-  height: 320px;
+  width: 290px;
+  height: 360px;
   margin: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0 0 10px #bbba;
+  box-shadow: 0 0 20px #bbba;
 }
 
 .menu {
@@ -63,11 +63,11 @@ section {
 }
 
 .menu h2 {
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 .menu h3 {
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 
 .menu1, .menu1 a, #page1 {
@@ -281,16 +281,12 @@ footer h2 {
 a {
   color: #fdcb46;
   text-decoration: none;
-}
-
-.icon_music .fas {
-  font-size: 2em;
-  display: inline-block;
-  padding: 5px;
-  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
-  background-clip: initial;
-  -webkit-background-clip: text;
-  color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .zoom {
@@ -304,31 +300,38 @@ a {
   opacity: 0.3;
 }
 
+.icon_music .fas {
+  font-size: 2em;
+  display: inline-block;
+  padding: 5px;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .degrade1 {
+  height: 70px;
   font-family: "Kurale", serif;
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
-  background-size: 100%;
-  background-repeat: repeat;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade2 {
+  height: 70px;
   font-family: "Dancing Script", cursive;
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
-  background-size: 100%;
-  background-repeat: repeat;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade3 {
+  height: 70px;
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
-  background-size: 100%;
-  background-repeat: repeat;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -395,6 +398,10 @@ a {
 }
 
 @media (max-width: 720px) {
+  section {
+    width: 260px;
+    height: 330px;
+  }
   .menu {
     display: flex;
     justify-content: center;
