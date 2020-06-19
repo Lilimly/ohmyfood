@@ -260,7 +260,6 @@ footer h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-weight: 500;
-  padding: auto;
 }
 
 .contact {
@@ -293,6 +292,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -315,7 +315,10 @@ a {
   background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .degrade2 {
@@ -325,7 +328,10 @@ a {
   background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .degrade3 {
@@ -335,7 +341,10 @@ a {
   background-repeat: repeat;
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .border1 {
