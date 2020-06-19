@@ -198,7 +198,7 @@ section {
 .line4 {
   display: inline-block;
   height: 12px;
-  width: 240px;
+  width: 220px;
   margin: auto 0px auto auto;
 }
 
@@ -432,7 +432,7 @@ a {
     justify-content: space-around;
     position: sticky;
     font-size: 0.9em;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
 }
 
@@ -446,6 +446,26 @@ a {
   }
   #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
     font-size: 1.5em;
+  }
+  footer {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+  }
+}
+
+@media (orientation: landscape) {
+  footer {
+    margin: auto;
+    height: 60px;
+    background-color: #579c87;
+    color: #fdcb46;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 /*# sourceMappingURL=index.css.map */
