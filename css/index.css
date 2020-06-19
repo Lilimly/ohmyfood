@@ -289,12 +289,10 @@ a {
   display: inline-block;
   padding: 5px;
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .zoom {
@@ -313,12 +311,10 @@ a {
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .degrade2 {
@@ -326,12 +322,10 @@ a {
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .degrade3 {
@@ -339,12 +333,10 @@ a {
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
   background-size: 100%;
   background-repeat: repeat;
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .border1 {
