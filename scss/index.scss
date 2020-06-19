@@ -50,7 +50,6 @@ section
     @include section;
     @include flex_column;
     box-shadow: 0 0 10px #bbba;
-    -webkit-box-shadow: 0 0 10px #bbba;
 }
 
 .menu
@@ -229,7 +228,6 @@ aside h2
 }
 
 // loading dots
-
 .loading:after 
 {
     content: ' .';
@@ -315,11 +313,9 @@ a
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 // Animation zoom
-
 .zoom {
     transform: scale(0.8);
     transition: transform 300ms ease-in-out;
@@ -327,7 +323,7 @@ a
     &:hover {
         transform: scale(1);
         opacity: 0.3;
-}
+    }
 }
      
 // Dégradé couleur
@@ -340,7 +336,6 @@ a
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 .degrade2
@@ -352,7 +347,6 @@ a
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -365,7 +359,6 @@ a
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 // Animations soulignage
@@ -461,10 +454,10 @@ a
     }
 
     .line1, .line2, .line3, .line4
-{
-    width: 15%;
-    height: 80%;
-}
+    {
+        width: 15%;
+        height: 80%;
+    }
 
     aside
     {

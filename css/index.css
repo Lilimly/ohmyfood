@@ -54,7 +54,6 @@ section {
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 0 10px #bbba;
-  -webkit-box-shadow: 0 0 10px #bbba;
 }
 
 .menu {
@@ -292,7 +291,6 @@ a {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .zoom {
@@ -314,7 +312,6 @@ a {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .degrade2 {
@@ -325,7 +322,6 @@ a {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .degrade3 {
@@ -336,7 +332,6 @@ a {
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 
 .border1 {
