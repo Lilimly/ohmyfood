@@ -155,7 +155,6 @@ section {
   font-size: 2em;
   display: inline-block;
   padding: 5px;
-  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -392,16 +391,15 @@ aside h2 {
 .degrade1 {
   font-family: "Kurale", serif;
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
-  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade2 {
+  line-height: 70px;
   font-family: "Dancing Script", cursive;
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
-  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -410,7 +408,6 @@ aside h2 {
 .degrade3 {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
-  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;

@@ -396,6 +396,7 @@ aside
 
 .degrade2
 {
+    line-height: 70px;
     font-family: $fifth_font;
     background-image: linear-gradient(0.25turn, $third_menu_degraded1 30%, $third_menu_degraded2 50%, $third_menu_degraded3 20%);
     @include degraded;
