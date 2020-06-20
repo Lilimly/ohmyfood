@@ -32,8 +32,14 @@ header h1 {
   font-weight: bold;
   margin: auto;
   text-align: center;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
   display: flex;
   justify-content: center;
+}
+
+header h1:hover {
+  opacity: 0.7;
 }
 
 footer {
@@ -149,6 +155,7 @@ section {
   font-size: 2em;
   display: inline-block;
   padding: 5px;
+  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -278,35 +285,35 @@ aside h2 {
   justify-content: space-between;
 }
 
-.line1 {
+.line_left1 {
   display: inline-block;
   height: 6px;
   width: 220px;
   margin: auto auto auto 0px;
 }
 
-.line2 {
+.line_right1 {
   display: inline-block;
   height: 6px;
   width: 220px;
   margin: auto 0px auto auto;
 }
 
-.line3 {
+.line_left2 {
   display: inline-block;
   height: 12px;
   width: 220px;
   margin: auto auto auto 0px;
 }
 
-.line4 {
+.line_right2 {
   display: inline-block;
   height: 12px;
   width: 220px;
   margin: auto 0px auto auto;
 }
 
-#page1 {
+.page1 {
   background-color: #fcdfdb;
   color: #3c1218;
   font-family: "Kalam", cursive;
@@ -314,19 +321,19 @@ aside h2 {
   padding: 30px 100px 30px 100px;
 }
 
-#page1 h2 {
+.page1 h2 {
   font-weight: 400;
 }
 
-#page1 .price {
+.page1 .price {
   font-weight: bold;
 }
 
-#page1 .font1 {
+.page1 .font1 {
   font-family: "Devonshire", cursive;
 }
 
-#page2 {
+.page2 {
   background-color: #fff5fe;
   color: #c77412;
   font-family: "Source Serif Pro", serif;
@@ -334,150 +341,119 @@ aside h2 {
   padding: 30px 100px 30px 100px;
 }
 
-#page2 #color2 {
+.page2 #color2 {
   color: #a56799;
 }
 
-#page2 #color3 {
+.page2 #color3 {
   color: #6e4ccc;
 }
 
-#page3 {
+.page3 {
   background-color: #f9f9f9;
   color: #2b91f8;
   font-family: "Kalam", cursive;
   padding: 30px 100px 30px 100px;
 }
 
-#page3 h2 {
+.page3 h2 {
   font-weight: 400;
 }
 
-#page3 .font_color_pages {
+.page3 .font_color_pages {
   color: #000000;
 }
 
-#page4 {
+.page4 {
   background-color: #fdfffd;
   color: #72bf56;
   font-family: "Kalam", cursive;
   padding: 30px 100px 30px 100px;
 }
 
-#page4 h2 {
+.page4 h2 {
   font-weight: 400;
 }
 
-#page4 .font_color_pages {
+.page4 .font_color_pages {
   color: #000000;
 }
 
-#page5 {
+.page5 {
   background-color: #fff5fe;
   color: #3c1218;
   padding: 20px;
 }
 
-#page5 a {
+.page5 a {
   color: #579c87;
 }
 
 .degrade1 {
   font-family: "Kurale", serif;
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
+  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade2 {
-  height: 70px;
   font-family: "Dancing Script", cursive;
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
+  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade3 {
-  height: 70px;
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  height: 70px;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
+.border {
+  display: inline-block;
+  text-decoration: none;
+  transition: background-size 0.5s;
+}
+
+.border:hover {
+  background-size: 100% 100%;
+}
+
 .border1 {
   color: #3c1218;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #f04a5e 0%, #f04a5e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
 }
 
-.border1:hover {
-  background-size: 100% 100%;
-}
-
-#border2 {
+.border2 {
   color: #c77412;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
 }
 
-#border2:hover {
-  background-size: 100% 100%;
-}
-
-#border3 {
+.border3 {
   color: #a56799;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
 }
 
-#border3:hover {
-  background-size: 100% 100%;
-}
-
-#border4 {
+.border4 {
   color: #6e4ccc;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
-}
-
-#border4:hover {
-  background-size: 100% 100%;
 }
 
 .border5 {
   color: #000000;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #2b91f8 0%, #2b91f8 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
-}
-
-.border5:hover {
-  background-size: 100% 100%;
 }
 
 .border6 {
   color: #000000;
-  display: inline-block;
-  text-decoration: none;
   background: linear-gradient(to top, #72bf56 0%, #72bf56 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size 0.5s;
-}
-
-.border6:hover {
-  background-size: 100% 100%;
 }
 
 @media (max-width: 720px) {
@@ -491,21 +467,21 @@ aside h2 {
     flex-direction: column;
     margin: auto;
   }
-  #page1, #page2, #page3, #page4 {
+  .page {
     padding: 7px;
   }
-  #page1 h1, #page2 h1, #page3 h1, #page4 h1 {
+  .page h1 {
     font-size: 2em;
   }
-  #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
+  .page h2 {
     font-size: 1.3em;
   }
-  #page1 .dish, #page2 .dish, #page3 .dish, #page4 .dish {
+  .page .dish {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .line1, .line2, .line3, .line4 {
+  .line {
     width: 15%;
     height: 80%;
   }
@@ -524,14 +500,14 @@ aside h2 {
 }
 
 @media (max-width: 1024px) and (min-width: 720px) {
-  .line1, .line2, .line3, .line4 {
+  .line {
     width: 30%;
     height: 60%;
   }
-  #page1, #page2, #page3, #page4 {
+  .page {
     padding: 30px;
   }
-  #page1 h2, #page2 h2, #page3 h2, #page4 h2 {
+  .page h2 {
     font-size: 1.5em;
   }
   footer {

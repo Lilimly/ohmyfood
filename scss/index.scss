@@ -278,32 +278,32 @@ aside
 }
 
 // décorations sous-titres menus
-.line1
+.line_left1
 {
     @include line_style1;
     margin: auto auto auto 0px;
 }
 
-.line2
+.line_right1
 {
     @include line_style1;
     margin: auto 0px auto auto;
 }
 
-.line3
+.line_left2
 {
     @include line_style2;
     margin: auto auto auto 0px;
 }
 
-.line4
+.line_right2
 {
     @include line_style2;
     margin: auto 0px auto auto;
 }
 
 // éléments page 1
-#page1
+.page1
 {
     @include menu1;
     padding: $padding_pages;
@@ -325,7 +325,7 @@ aside
 }
 
 // éléments page 2
-#page2
+.page2
 {
     @include menu2;
     padding: $padding_pages;
@@ -342,7 +342,7 @@ aside
 }
 
 // éléments page 3
-#page3
+.page3
 {
     @include menu3;
     padding: $padding_pages;
@@ -359,7 +359,7 @@ aside
 }
 
 // éléments page 4
-#page4
+.page4
 {
     @include menu4;
     padding: $padding_pages;
@@ -376,7 +376,7 @@ aside
 }
 
 // page 5
-#page5
+.page5
 {
     @include mentions;
 
@@ -396,7 +396,6 @@ aside
 
 .degrade2
 {
-    height: 70px;
     font-family: $fifth_font;
     background-image: linear-gradient(0.25turn, $third_menu_degraded1 30%, $third_menu_degraded2 50%, $third_menu_degraded3 20%);
     @include degraded;
@@ -404,104 +403,68 @@ aside
 
 .degrade3
 {
-    height: 70px;
     font-family: $sixth_font;
     background-image: linear-gradient(0.25turn, $fourth_menu_degraded1, $fourth_menu_degraded2);
     @include degraded;
 }
 
 // Animations soulignage
+// border généraux
+.border 
+{
+    display: inline-block;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover
+    {
+        background-size: 100% 100%;
+    }
+}
+
 // border page 1
 .border1 
 {
     color: $first_menu;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $first_note_color 0%, $first_note_color 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
-}
-  
-.border1:hover 
-{
-    background-size: 100% 100%;
 }
 
 // border page 2
 //border 1
-#border2 
+.border2 
 {
     color: $second_menu;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $second_menu 0%, $second_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
-}
-  
-#border2:hover 
-{
-    background-size: 100% 100%;
 }
 
 // border 2
-#border3 
+.border3 
 {
     color: $second_menu2;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $second_menu2 0%, $second_menu2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
-}
-  
-#border3:hover 
-{
-    background-size: 100% 100%;
 }
 
 // border 3
-#border4 
+.border4 
 {
     color: $second_menu3;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $second_menu3 0%, $second_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
-}
-  
-#border4:hover 
-{
-    background-size: 100% 100%;
 }
 
 // border page 3
 .border5 
 {
     color: $third_fouth_page;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $third_menu 0%, $third_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
-}
-  
-.border5:hover 
-{
-    background-size: 100% 100%;
 }
 
 // border page 4
 .border6
 {
     color: $third_fouth_page;
-    display: inline-block;
-    text-decoration: none;
     background: linear-gradient(to top, $fourth_menu 0%, $fourth_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-    transition: $transition;
 }
   
-.border6:hover 
-{
-    background-size: 100% 100%;
-}
-
 // responsive
 // écrans moins de 720 px
 @media (max-width: 720px)
@@ -518,7 +481,7 @@ aside
         margin: auto;
     }
 
-    #page1, #page2, #page3, #page4
+    .page
     {
         padding: 7px;
 
@@ -538,7 +501,7 @@ aside
         }
     }
 
-    .line1, .line2, .line3, .line4
+    .line
     {
         width: 15%;
         height: 80%;
@@ -564,12 +527,12 @@ aside
 // écrans de plus de 720 px et moins de 1024px
 @media (max-width: 1024px) and (min-width: 720px)
 {
-        .line1, .line2, .line3, .line4
+        .line
     {
         width: 30%;
         height: 60%;
     }
-        #page1, #page2, #page3, #page4
+        .page
     {
         padding: 30px;
 

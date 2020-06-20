@@ -35,6 +35,13 @@
     font-weight: bold;
     margin: auto;
     text-align: center;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover
+    {
+        opacity: 0.7;
+    }
 }
 
 // Paramètres main
@@ -109,6 +116,7 @@
 // Paramètres dégradés
 @mixin degraded
 {
+    height: 70px;
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
