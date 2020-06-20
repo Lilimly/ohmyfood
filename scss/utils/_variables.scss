@@ -1,4 +1,4 @@
-// font
+// fonts
 $main_font: 'Montserrat', sans-serif;
 $first_font: 'Devonshire', cursive;
 $second_font: 'Kalam', cursive;
@@ -24,10 +24,26 @@ $second_menu2: #a56799;
 $second_menu3: #6e4ccc;
 $third_menu: #2b91f8;
 $fourth_menu: #72bf56;
+$third_fouth_page: #000000;
+
+// degraded colors
+$second_menu_degraded: #905bfd;
+$third_menu_degraded1: #0431df;
+$third_menu_degraded2: #518cf0;
+$third_menu_degraded3: #0887fb;
+$fourth_menu_degraded1: #3d9339;
+$fourth_menu_degraded2: #bfff7e;
 
 // icon colors
-$first_note_color: #f36d68;
+$first_note_color: #f04a5e;
 $second_note_color: #f78f6a;
+
+// dots shadow animation 
+$dots_shadow: rgba(0,0,0,0);
+
+// box shadow
+$box_shadow: 0 0 20px #bbba;
 
 //animation
 $shake-intensity: 5%;
+$transition: background-size .5s;

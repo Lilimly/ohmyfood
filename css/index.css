@@ -117,7 +117,7 @@ section {
 }
 
 #page5 {
-  background-color: gainsboro;
+  background-color: #fff5fe;
   color: #3c1218;
   padding: 20px;
 }
@@ -285,8 +285,8 @@ a {
   height: 100%;
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 .zoom {
@@ -304,10 +304,10 @@ a {
   font-size: 2em;
   display: inline-block;
   padding: 5px;
-  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
+  background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
 .degrade1 {
@@ -340,8 +340,8 @@ a {
   color: #3c1218;
   display: inline-block;
   text-decoration: none;
-  background: linear-gradient(to top, #3c1218 0%, #3c1218 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
+  background: linear-gradient(to top, #f04a5e 0%, #f04a5e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
 }
 
 .border1:hover {
@@ -353,7 +353,7 @@ a {
   display: inline-block;
   text-decoration: none;
   background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
+  transition: background-size 0.5s;
 }
 
 #border2:hover {
@@ -365,7 +365,7 @@ a {
   display: inline-block;
   text-decoration: none;
   background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
+  transition: background-size 0.5s;
 }
 
 #border3:hover {
@@ -377,7 +377,7 @@ a {
   display: inline-block;
   text-decoration: none;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
+  transition: background-size 0.5s;
 }
 
 #border4:hover {
@@ -385,14 +385,26 @@ a {
 }
 
 .border5 {
-  color: black;
+  color: #000000;
   display: inline-block;
   text-decoration: none;
-  background: linear-gradient(to top, black 0%, black 10%, transparent 10.01%) no-repeat left bottom/0 100%;
-  transition: background-size .5s;
+  background: linear-gradient(to top, #2b91f8 0%, #2b91f8 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
 }
 
 .border5:hover {
+  background-size: 100% 100%;
+}
+
+.border6 {
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #72bf56 0%, #72bf56 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  transition: background-size 0.5s;
+}
+
+.border6:hover {
   background-size: 100% 100%;
 }
 
@@ -435,6 +447,7 @@ a {
     position: sticky;
     font-size: 0.9em;
     padding-bottom: 12px;
+    bottom: 0;
   }
 }
 
@@ -454,6 +467,7 @@ a {
     display: flex;
     justify-content: space-around;
     position: sticky;
+    bottom: 0;
   }
 }
 
