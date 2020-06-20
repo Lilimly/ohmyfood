@@ -1,6 +1,8 @@
 @import "./utils/_variables.scss";
 @import "./utils/_mixins.scss";
 
+// éléments relatif à l'ensemble des pages
+// styles généraux
 body
 {
     margin: auto;
@@ -27,12 +29,58 @@ header
 {
     @include header;
     @include flex_column;
+
+    h1
+    {
+        @include header_h1;
+        @include flex_center;
+    }
 }
 
-header h1
+// footer
+footer
 {
-    @include header_h1;
-    @include flex_center;
+    @include footer;
+    @include flex_space_between;
+
+    h2 
+    {
+        @include footer_h2;
+    }
+
+    .contact
+    {
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+// animations footer
+.anim 
+{
+    &:hover
+    {
+        animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 2;
+    }
+}
+
+@keyframes headshake 
+{
+    25% 
+    {
+        transform: translateX($shake-intensity);
+    }
+    75% 
+    {
+        transform: translateX($shake-intensity * -1);
+    }
+}
+
+// éléments page d'accueil
+// éléments généraux
+a
+{
+    @include a_style;
+    @include flex_column;
 }
 
 //main
@@ -42,7 +90,23 @@ main
     @include flex_column;
 }
 
-//section page d'accueil
+.menu
+{
+    @include flex_center;
+    margin: 30px;
+
+    h2 
+    {
+        font-size: 2.3em;
+    }
+
+    h3 
+    {
+        font-size: 1.9em;
+    }
+}
+
+//section
 section
 {
     @include section;
@@ -50,158 +114,84 @@ section
     box-shadow: $box_shadow;
 }
 
-.menu
+// Animation zoom
+.zoom 
 {
-    @include flex_center;
-    margin: 30px;
-}
-
-.menu h2
-{
-    font-size: 2.3em;
-}
-
-.menu h3
-{
-    font-size: 1.9em;
+    transform: scale(0.8);
+    transition: transform 300ms ease-in-out;
+    opacity: 1;
+    &:hover 
+    {
+        transform: scale(1);
+        opacity: 0.3;
+    }
 }
 
 // Menu 1
-.menu1, .menu1 a, #page1
+.menu1
 {
     @include menu1;
+
+    a
+    {
+        @include menu1;
+    }
+
+    .font1
+    {
+        font-family: $first_font;
+    }
 }
 
-.font1
+// icon
+.icon_music .fas
 {
-    font-family: $first_font;
+    @include icon_music;
+    @include degraded;
+    background-image: linear-gradient(0.25turn, $first_note_color, $second_note_color);
 }
 
 // Menu 2
-.menu2, .menu2 a, #page2
+.menu2
 {
     @include menu2;
-}
 
-#color2
-{
-    color: $second_menu2;
-}
-
-#color3
-{
-    color: $second_menu3;
+    a 
+    {
+        @include menu2;
+    }
 }
 
 // Menu 3
-.menu3, .menu3 a, #page3
+.menu3
 {
     @include menu3;
-}
 
-.menu3 h2, .menu4 h2
-{
-    font-weight: 300;
-}
+    a 
+    {
+        @include menu3;
+    }
 
-#menu3_color, #menu4_color
-{
-    color: $third_fouth_page;
+    h2 
+    {
+        font-weight: 300;
+    }
 }
 
 // Menu 4
-.menu4, .menu4 a, #page4
+.menu4
 {
     @include menu4;
-}
 
-#page5
-{
-    @include mentions;
-}
+    a 
+    {
+        @include menu4;
+    }
 
-#page5 a
-{
-    color: $primary_color;
-}
-
-// sections des menu
-.title
-{
-    border: none;
-    box-shadow: none;
-    width: auto;
-    height: auto;
-}
-
-.carte
-{
-    margin: auto auto 30px auto;
-    height: auto;
-    width: 80%;
-}
-
-.bottom_title
-{
-    @include flex_center;
-}
-
-.bottom_title span
-{
-    margin: auto 15px auto 0px;
-    height: 35px;
-    width: 35px;
-}
-
-// pages des menus
-#page1, #page2, #page3, #page4
-{
-    padding: 30px 100px 30px 100px;
-}
-
-#page1 h2, #page3 h2, #page4 h2
-{
-    font-weight: 400;
-}
-
-.dish
-{
-    @include flex_space_between;
-}
-
-#page1 .price
-{
-    font-weight: bold;
-}
-
-.subtitle
-{
-    @include flex_center;
-    width: auto;
-}
-
-.line1
-{
-    @include line_style1;
-    margin: auto auto auto 0px;
-}
-
-.line2
-{
-    @include line_style1;
-    margin: auto 0px auto auto;
-}
-
-.line3
-{
-    @include line_style2;
-    margin: auto auto auto 0px;
-}
-
-.line4
-{
-    @include line_style2;
-    margin: auto 0px auto auto;
+    h2 
+    {
+        font-weight: 300;
+    }
 }
 
 //aside
@@ -209,11 +199,11 @@ aside
 {
     @include aside;
     @include flex_column;
-}
 
-aside h2
-{
-    @include aside_h2;
+    h2 
+    {
+        @include aside_h2;
+    }
 }
 
 // loading dots
@@ -247,72 +237,156 @@ aside h2
         text-shadow: .25em 0 0 $logo_color, .5em 0 0 $logo_color;
     }
 }
-  
-// footer
-footer
+
+// éléments généraux des pages supplémentaires
+.title
 {
-    @include footer;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+}
+
+.carte
+{
+    margin: auto auto 30px auto;
+    height: auto;
+    width: 80%;
+}
+
+.subtitle
+{
+    @include flex_center;
+    width: auto;
+}
+
+.bottom_title
+{
+    @include flex_center;
+
+    span 
+    {
+        margin: auto 15px auto 0px;
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.dish
+{
     @include flex_space_between;
 }
 
-footer h2
+// décorations sous-titres menus
+.line1
 {
-    @include footer_h2;
+    @include line_style1;
+    margin: auto auto auto 0px;
 }
 
-.contact
+.line2
 {
-    padding: 0px 30px 0px 30px;
+    @include line_style1;
+    margin: auto 0px auto auto;
 }
 
-.anim 
+.line3
 {
-    &:hover
+    @include line_style2;
+    margin: auto auto auto 0px;
+}
+
+.line4
+{
+    @include line_style2;
+    margin: auto 0px auto auto;
+}
+
+// éléments page 1
+#page1
+{
+    @include menu1;
+    padding: $padding_pages;
+
+    h2
     {
-        animation: headshake 150ms cubic-bezier(.4,.1,.6,.9) 2;
+        font-weight: 400;
+    }
+
+    .price
+    {
+        font-weight: bold;
+    }
+
+    .font1
+    {
+        font-family: $first_font;
     }
 }
 
-@keyframes headshake 
+// éléments page 2
+#page2
 {
-    25% 
-    {
-        transform: translateX($shake-intensity);
-    }
-    75% 
-    {
-        transform: translateX($shake-intensity * -1);
-    }
-}
+    @include menu2;
+    padding: $padding_pages;
 
-a
-{
-    @include a_style;
-    @include flex_column;
-}
-
-// Animation zoom
-.zoom 
-{
-    transform: scale(0.8);
-    transition: transform 300ms ease-in-out;
-    opacity: 1;
-    &:hover 
+    #color2
     {
-        transform: scale(1);
-        opacity: 0.3;
+        color: $second_menu2;
+    }
+
+    #color3
+    {
+        color: $second_menu3;
     }
 }
 
-// icon
-.icon_music .fas
+// éléments page 3
+#page3
 {
-    @include icon_music;
-    @include degraded;
-    background-image: linear-gradient(0.25turn, $first_note_color, $second_note_color);
+    @include menu3;
+    padding: $padding_pages;
+
+    h2
+    {
+        font-weight: 400;
+    }
+
+    .font_color_pages
+    {
+        color: $third_fouth_page;
+    }
+}
+
+// éléments page 4
+#page4
+{
+    @include menu4;
+    padding: $padding_pages;
+
+    h2
+    {
+        font-weight: 400;
+    }
+
+    .font_color_pages
+    {
+        color: $third_fouth_page;
+    }
+}
+
+// page 5
+#page5
+{
+    @include mentions;
+
+    a 
+    {
+        color: $primary_color;
+    }
 }
      
-// Dégradé couleur
+// Dégradés couleur
 .degrade1
 {
     font-family: $fourth_font;
@@ -328,7 +402,6 @@ a
     @include degraded;
 }
 
-
 .degrade3
 {
     height: 70px;
@@ -338,6 +411,7 @@ a
 }
 
 // Animations soulignage
+// border page 1
 .border1 
 {
     color: $first_menu;
@@ -352,6 +426,8 @@ a
     background-size: 100% 100%;
 }
 
+// border page 2
+//border 1
 #border2 
 {
     color: $second_menu;
@@ -366,6 +442,7 @@ a
     background-size: 100% 100%;
 }
 
+// border 2
 #border3 
 {
     color: $second_menu2;
@@ -380,6 +457,7 @@ a
     background-size: 100% 100%;
 }
 
+// border 3
 #border4 
 {
     color: $second_menu3;
@@ -394,6 +472,7 @@ a
     background-size: 100% 100%;
 }
 
+// border page 3
 .border5 
 {
     color: $third_fouth_page;
@@ -408,6 +487,7 @@ a
     background-size: 100% 100%;
 }
 
+// border page 4
 .border6
 {
     color: $third_fouth_page;
@@ -423,6 +503,7 @@ a
 }
 
 // responsive
+// écrans moins de 720 px
 @media (max-width: 720px)
 {
     section
@@ -440,21 +521,21 @@ a
     #page1, #page2, #page3, #page4
     {
         padding: 7px;
-    }
 
-    #page1 h1, #page2 h1, #page3 h1, #page4 h1
-    {
-        font-size: 2em;
-    }
+        h1 
+        {
+            font-size: 2em;
+        }
 
-    #page1 h2, #page2 h2, #page3 h2, #page4 h2
-    {
-        font-size: 1.3em;
-    }
+        h2 
+        {
+            font-size: 1.3em;
+        }
 
-    .dish
-    {
-        @include flex_column;
+        .dish
+        {
+            @include flex_column;
+        }
     }
 
     .line1, .line2, .line3, .line4
@@ -480,6 +561,7 @@ a
     }
 }
 
+// écrans de plus de 720 px et moins de 1024px
 @media (max-width: 1024px) and (min-width: 720px)
 {
         .line1, .line2, .line3, .line4
@@ -490,11 +572,12 @@ a
         #page1, #page2, #page3, #page4
     {
         padding: 30px;
+
+        h2 
+        {
+            font-size: 1.5em;
+        }
     }   
-        #page1 h2, #page2 h2, #page3 h2, #page4 h2
-    {
-        font-size: 1.5em;
-    }
 
     footer
     {
@@ -506,6 +589,7 @@ a
     }
 }
 
+// format landscape
 @media (orientation: landscape)
 {
     footer
