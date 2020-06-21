@@ -148,8 +148,9 @@ section
 .icon_music .fas
 {
     @include icon_music;
-    @include degraded;
+    @include icon_degraded;
     background-image: linear-gradient(0.25turn, $first_note_color, $second_note_color);
+    
 }
 
 // Menu 2
@@ -282,25 +283,25 @@ aside
 .line_left1
 {
     @include line_style1;
-    margin: auto auto auto 0px;
+    @include line_margin_left;
 }
 
 .line_right1
 {
     @include line_style1;
-    margin: auto 0px auto auto;
+    @include line_margin_right;
 }
 
 .line_left2
 {
     @include line_style2;
-    margin: auto auto auto 0px;
+    @include line_margin_left;
 }
 
 .line_right2
 {
     @include line_style2;
-    margin: auto 0px auto auto;
+    @include line_margin_right;
 }
 
 // éléments page 1
@@ -390,24 +391,21 @@ aside
 // Dégradés couleur
 .degrade1
 {
-    font-family: $fourth_font;
     background-image: linear-gradient(0.25turn, $second_menu 30%, $second_menu_degraded 70%);
-    @include degraded;
+    @include degraded($fourth_font);
 }
 
 .degrade2
 {
     line-height: 70px;
-    font-family: $fifth_font;
     background-image: linear-gradient(0.25turn, $third_menu_degraded1 30%, $third_menu_degraded2 50%, $third_menu_degraded3 20%);
-    @include degraded;
+    @include degraded($fifth_font);
 }
 
 .degrade3
 {
-    font-family: $sixth_font;
     background-image: linear-gradient(0.25turn, $fourth_menu_degraded1, $fourth_menu_degraded2);
-    @include degraded;
+    @include degraded($sixth_font);
 }
 
 // Animations soulignage
@@ -427,44 +425,38 @@ aside
 // border page 1
 .border1 
 {
-    color: $first_menu;
-    background: linear-gradient(to top, $first_note_color 0%, $first_note_color 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($first_menu, $first_note_color);
 }
 
 // border page 2
 //border 1
 .border2 
 {
-    color: $second_menu;
-    background: linear-gradient(to top, $second_menu 0%, $second_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($second_menu, $second_menu);
 }
 
 // border 2
 .border3 
 {
-    color: $second_menu2;
-    background: linear-gradient(to top, $second_menu2 0%, $second_menu2 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($second_menu2, $second_menu2);
 }
 
 // border 3
 .border4 
 {
-    color: $second_menu3;
-    background: linear-gradient(to top, $second_menu3 0%, $second_menu3 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($second_menu3, $second_menu3);
 }
 
 // border page 3
 .border5 
 {
-    color: $third_fouth_page;
-    background: linear-gradient(to top, $third_menu 0%, $third_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($third_fouth_page, $third_menu);
 }
 
 // border page 4
 .border6
 {
-    color: $third_fouth_page;
-    background: linear-gradient(to top, $fourth_menu 0%, $fourth_menu 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    @include underline($third_fouth_page, $fourth_menu);
 }
   
 // responsive
@@ -516,13 +508,9 @@ aside
 
     footer
     {
-        margin: 0px;
-        display: flex;
-        justify-content: space-around;
-        position: sticky;
+        @include flex_sticky;
         font-size: 0.9em;
         padding-bottom: 12px;
-        bottom: 0;
     }
 }
 
@@ -546,11 +534,7 @@ aside
 
     footer
     {
-        margin: 0px;
-        display: flex;
-        justify-content: space-around;
-        position: sticky;
-        bottom: 0;
+        @include flex_sticky;
     }
 }
 

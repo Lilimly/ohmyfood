@@ -32,14 +32,8 @@ header h1 {
   font-weight: bold;
   margin: auto;
   text-align: center;
-  opacity: 1;
-  transition: opacity 300ms ease-in-out;
   display: flex;
   justify-content: center;
-}
-
-header h1:hover {
-  opacity: 0.7;
 }
 
 footer {
@@ -389,8 +383,8 @@ aside h2 {
 }
 
 .degrade1 {
-  font-family: "Kurale", serif;
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
+  font-family: "Kurale", serif;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -398,16 +392,16 @@ aside h2 {
 
 .degrade2 {
   line-height: 70px;
-  font-family: "Dancing Script", cursive;
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
+  font-family: "Dancing Script", cursive;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .degrade3 {
-  font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
+  font-family: "Kaushan Script", cursive;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -486,13 +480,13 @@ aside h2 {
     margin-top: 30px;
   }
   footer {
-    margin: 0px;
     display: flex;
     justify-content: space-around;
     position: sticky;
+    bottom: 0;
+    margin: 0px;
     font-size: 0.9em;
     padding-bottom: 12px;
-    bottom: 0;
   }
 }
 
@@ -508,11 +502,11 @@ aside h2 {
     font-size: 1.5em;
   }
   footer {
-    margin: 0px;
     display: flex;
     justify-content: space-around;
     position: sticky;
     bottom: 0;
+    margin: 0px;
   }
 }
 
@@ -529,4 +523,4 @@ aside h2 {
     justify-content: space-between;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */

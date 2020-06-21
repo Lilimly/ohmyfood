@@ -18,6 +18,15 @@
 	justify-content: space-between;
 }
 
+@mixin flex_sticky
+{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+    margin: 0px;
+}
+
 // Paramètres header
 @mixin header
 {
@@ -35,13 +44,6 @@
     font-weight: bold;
     margin: auto;
     text-align: center;
-    opacity: 1;
-    transition: opacity 300ms ease-in-out;
-
-    &:hover
-    {
-        opacity: 0.7;
-    }
 }
 
 // Paramètres main
@@ -114,20 +116,30 @@
 }
 
 // Paramètres dégradés
-@mixin degraded
+// dégradé note
+@mixin icon_degraded
 {
+    background-clip: initial;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@mixin degraded($font)
+{
+    font-family: $font;
     background-clip: initial;
     -webkit-background-clip: text;
     color: transparent;
 }
 
 // Paramètres généraux pages des menus
+// décorations lignes
 @mixin line_style1
 {
     display: inline-block;
     height: 6px;
     width: 220px;
 }
+
 
 @mixin line_style2
 {
@@ -136,6 +148,22 @@
     width: 220px;
 }
 
+@mixin line_margin_left
+{
+    margin: auto auto auto 0px;
+}
+
+@mixin line_margin_right
+{
+    margin: auto 0px auto auto;
+}
+
+// soulignage
+@mixin underline($color, $background)
+{
+    color: $color;
+    background: linear-gradient(to top, $background 0%, $background 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+}
 
 // Paramètres aside
 @mixin aside
