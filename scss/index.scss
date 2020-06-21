@@ -1,5 +1,6 @@
 @import "./utils/_variables.scss";
 @import "./utils/_mixins.scss";
+@import "./utils/_responsive.scss";
 
 // éléments relatif à l'ensemble des pages
 // styles généraux
@@ -468,7 +469,7 @@ aside
   
 // responsive
 // écrans moins de 720 px
-@media (max-width: 720px)
+@media #{$small_screen}
 {
     section
     {
@@ -526,7 +527,7 @@ aside
 }
 
 // écrans de plus de 720 px et moins de 1024px
-@media (max-width: 1024px) and (min-width: 720px)
+@media #{$medium_screen}
 {
         .line
     {
@@ -554,7 +555,7 @@ aside
 }
 
 // format landscape
-@media (orientation: landscape)
+@media #{$landscape}
 {
     footer
     {

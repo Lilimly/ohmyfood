@@ -453,7 +453,7 @@ aside h2 {
   background: linear-gradient(to top, #72bf56 0%, #72bf56 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
-@media (max-width: 720px) {
+@media only screen and (max-width: 720px) {
   section {
     width: 260px;
     height: 330px;
@@ -496,7 +496,7 @@ aside h2 {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 720px) {
+@media only screen and (max-width: 1024px) and (min-width: 720px) {
   .line {
     width: 30%;
     height: 60%;
