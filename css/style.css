@@ -64,10 +64,10 @@ footer .contact {
 
 @keyframes headshake {
   25% {
-    transform: translateX(5%);
+    transform: translateX(10%);
   }
   75% {
-    transform: translateX(-5%);
+    transform: translateX(-10%);
   }
 }
 
