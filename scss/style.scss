@@ -212,8 +212,8 @@ aside
 // loading dots
 .loading:after 
 {
-    content: ' .';
-    animation: dots 2s backwards infinite;
+    content: '.';
+    animation: dots 2s infinite;
 }
   
 @keyframes dots 
@@ -232,11 +232,13 @@ aside
 
     60% 
     {
+        color: $logo_color;
         text-shadow: .25em 0 0 $logo_color, .5em 0 0 $dots_shadow;
     }
 
     80%, 100% 
     {
+        color: $logo_color;
         text-shadow: .25em 0 0 $logo_color, .5em 0 0 $logo_color;
     }
 }
@@ -254,13 +256,20 @@ aside
 {
     margin: auto auto 30px auto;
     height: auto;
-    width: 80%;
+    width: 90%;
 }
 
-.subtitle
+.subtitle1
 {
     @include flex_center;
-    width: auto;
+    width: 90%;
+    margin: auto;
+}
+
+.subtitle2
+{
+    @include flex_center;
+    margin: auto;
 }
 
 .bottom_title
@@ -278,6 +287,8 @@ aside
 .dish
 {
     @include flex_space_between;
+    width: 90%;
+    margin: auto;
 }
 
 // décorations sous-titres menus
@@ -421,7 +432,7 @@ aside
 
     &:hover
     {
-        background-size: 0% 100%;
+        background-size: 100% 100%;
     }
 }
 
@@ -453,13 +464,24 @@ aside
 // border page 3
 .border5 
 {
-    @include underline($third_fouth_page, $third_menu);
+    @include underline($third_fouth_page, $third_menu_degraded1);
 }
 
-// border page 4
 .border6
 {
-    @include underline($third_fouth_page, $fourth_menu);
+    @include underline($third_fouth_page, $third_menu_degraded2);
+}
+
+.border7
+{
+    @include underline($third_fouth_page, $third_menu_degraded3);
+}
+
+
+// border page 4
+.border8
+{
+    @include underline($third_fouth_page, $fourth_menu_degraded2);
 }
   
 // responsive

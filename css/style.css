@@ -222,8 +222,8 @@ aside h2 {
 }
 
 .loading:after {
-  content: ' .';
-  animation: dots 2s backwards infinite;
+  content: '.';
+  animation: dots 2s infinite;
 }
 
 @keyframes dots {
@@ -236,9 +236,11 @@ aside h2 {
     text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   60% {
+    color: #fdcb46;
     text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 rgba(0, 0, 0, 0);
   }
   80%, 100% {
+    color: #fdcb46;
     text-shadow: 0.25em 0 0 #fdcb46, 0.5em 0 0 #fdcb46;
   }
 }
@@ -253,13 +255,20 @@ aside h2 {
 .carte {
   margin: auto auto 30px auto;
   height: auto;
-  width: 80%;
+  width: 90%;
 }
 
-.subtitle {
+.subtitle1 {
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 90%;
+  margin: auto;
+}
+
+.subtitle2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .bottom_title {
@@ -276,6 +285,8 @@ aside h2 {
 .dish {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: auto;
 }
 
 .line_left1 {
@@ -416,7 +427,7 @@ aside h2 {
 }
 
 .border:hover {
-  background-size: 0% 100%;
+  background-size: 100% 100%;
 }
 
 .border1 {
@@ -441,12 +452,22 @@ aside h2 {
 
 .border5 {
   color: #000000;
-  background: linear-gradient(to top, #2b91f8 0%, #2b91f8 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #0431df 0%, #0431df 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 .border6 {
   color: #000000;
-  background: linear-gradient(to top, #72bf56 0%, #72bf56 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #518cf0 0%, #518cf0 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+}
+
+.border7 {
+  color: #000000;
+  background: linear-gradient(to top, #0887fb 0%, #0887fb 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+}
+
+.border8 {
+  color: #000000;
+  background: linear-gradient(to top, #bfff7e 0%, #bfff7e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
 @media only screen and (max-width: 720px) {
