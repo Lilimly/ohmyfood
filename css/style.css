@@ -59,15 +59,15 @@ footer .contact {
 }
 
 .anim:hover {
-  animation: headshake 150ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: wiggle 150ms infinite ease-in-out;
 }
 
-@keyframes headshake {
+@keyframes wiggle {
   25% {
-    transform: translateX(10%);
+    transform: translateX(5%);
   }
   75% {
-    transform: translateX(-10%);
+    transform: translateX(-5%);
   }
 }
 
@@ -376,10 +376,12 @@ aside h2 {
   background-color: #fff5fe;
   color: #3c1218;
   padding: 20px;
+  text-align: left;
 }
 
 .page5 a {
   color: #579c87;
+  text-align: left;
 }
 
 .degrade1 {
@@ -414,7 +416,7 @@ aside h2 {
 }
 
 .border:hover {
-  background-size: 100% 100%;
+  background-size: 0% 100%;
 }
 
 .border1 {
