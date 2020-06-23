@@ -73,7 +73,7 @@ footer
     }
     75% 
     {
-        transform: translateX($shake-intensity * -1);
+        transform: translateY($shake-intensity * -1);
     }
 }
 
