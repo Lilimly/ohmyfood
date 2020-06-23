@@ -118,8 +118,8 @@ section {
 
 .zoom {
   transform: scale(0.8);
-  transition: transform 300ms ease-in-out;
   opacity: 1;
+  transition: transform 300ms ease-in-out;
 }
 
 .zoom:hover {
