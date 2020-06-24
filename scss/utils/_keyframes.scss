@@ -1,0 +1,41 @@
+// keyframes wiggle
+@keyframes wiggle
+{
+    25% 
+    {
+        transform: translateX($shake-intensity);
+    }
+    75% 
+    {
+        transform: translateX($shake-intensity * -1);
+    }
+}
+
+// keyframes dots
+@keyframes dots 
+{
+    0%, 25%
+    {
+        opacity: 0;
+    }
+
+    25%
+    {
+        opacity: 1;
+    }
+
+    50%
+    {
+        opacity: 0;
+    }
+
+    75%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
