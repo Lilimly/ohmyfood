@@ -1,4 +1,4 @@
-// Paramètres flex
+/* Paramètres flex */
 @mixin flex_column
 {
     display: flex;
@@ -27,7 +27,7 @@
     margin: 0px;
 }
 
-// Paramètres header
+/* Paramètres header */
 @mixin header
 {
     font-family: $main_font;
@@ -46,7 +46,7 @@
     text-align: center;
 }
 
-// Paramètres main
+/* Paramètres main */
 @mixin main
 {
     background-color: $secondary_color;
@@ -54,7 +54,7 @@
     padding-bottom: 40px;
 }
 
-// paramètres section
+/* paramètres section */
 @mixin section
 {
     width: 290px;
@@ -63,7 +63,7 @@
     text-align: center;
 }
 
-// Paramètres menu 1
+/* Paramètres menu 1 */
 @mixin menu1
 {
     background-color: $third_color;
@@ -72,7 +72,7 @@
     font-weight: lighter;
 }
 
-// Paramètres menu 2
+/* Paramètres menu 2 */
 @mixin menu2
 {
     background-color: $fouth_color;
@@ -81,7 +81,7 @@
     font-weight: 100;
 }
 
-// Paramètres menu 3
+/* Paramètres menu 3 */
 @mixin menu3
 {
     background-color: $fifth_color;
@@ -89,7 +89,7 @@
     font-family: $second_font;
 }
 
-// Paramètres menu 4
+/* Paramètres menu 4 */
 @mixin menu4
 {
     background-color: $sixt_color;
@@ -97,7 +97,7 @@
     font-family: $second_font;
 }
 
-// Paramètres a
+/* Paramètres a */
 @mixin a_style
 {
     color: $logo_color;
@@ -107,7 +107,7 @@
     text-align: center;
 }
 
-// Paramètres icon_music
+/* Paramètres icon_music */
 @mixin icon_music
 {
     font-size: 2em;
@@ -115,8 +115,8 @@
     padding: 5px;
 }
 
-// Paramètres dégradés
-// dégradé note
+/* Paramètres dégradés */
+/* dégradé note */
 @mixin icon_degraded
 {
     background-clip: initial;
@@ -131,15 +131,14 @@
     color: transparent;
 }
 
-// Paramètres généraux pages des menus
-// décorations lignes
+/* Paramètres généraux pages des menus */
+/* décorations lignes */
 @mixin line_style1
 {
     display: inline-block;
-    height: 6px;
+    height: 8px;
     width: 220px;
 }
-
 
 @mixin line_style2
 {
@@ -148,24 +147,14 @@
     width: 220px;
 }
 
-@mixin line_margin_left
-{
-    margin: auto auto auto 0px;
-}
-
-@mixin line_margin_right
-{
-    margin: auto 0px auto auto;
-}
-
-// soulignage
+/* soulignage */
 @mixin underline($color, $background)
 {
     color: $color;
     background: linear-gradient(to top, $background 0%, $background 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
 }
 
-// Paramètres aside
+/* Paramètres aside */
 @mixin aside
 {
     background-color: $primary_color;
@@ -185,7 +174,7 @@
     padding-bottom: 10px;
 }
 
-// Paramètres mentions légales
+/* Paramètres mentions légales */
 @mixin mentions
 {
     background-color: $fouth_color;
@@ -193,7 +182,7 @@
     padding: 20px;
 }
 
-// Paramètres footer
+/* Paramètres footer */
 @mixin footer
 {
     margin: auto;

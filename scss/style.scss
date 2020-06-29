@@ -3,8 +3,8 @@
 @import "./utils/_keyframes.scss";
 @import "./utils/_responsive.scss";
 
-// éléments relatif à l'ensemble des pages
-// styles généraux
+/* éléments relatif à l'ensemble des pages */
+/* styles généraux */
 body
 {
     margin: auto;
@@ -26,7 +26,7 @@ h3
     font-weight: normal;
 }
 
-// header
+/* header */
 header
 {
     @include header;
@@ -39,7 +39,7 @@ header
     }
 }
 
-// footer
+/* footer */
 footer
 {
     @include footer;
@@ -56,7 +56,7 @@ footer
     }
 }
 
-// animations footer
+/* animations footer */
 .anim 
 {  
     &:hover
@@ -66,15 +66,15 @@ footer
     }
 }
 
-// éléments page d'accueil
-// éléments généraux
+/* éléments page d'accueil */
+/* éléments généraux */
 a
 {
     @include a_style;
     @include flex_column;
 }
 
-//main
+/* main */
 main
 {
     @include main;
@@ -97,7 +97,7 @@ main
     }
 }
 
-//section
+/* section */
 section
 {
     @include section;
@@ -105,7 +105,7 @@ section
     box-shadow: $box_shadow;
 }
 
-// Animation zoom
+/* Animation zoom */
 .zoom 
 {
     transform: scale(0.8);
@@ -118,7 +118,7 @@ section
     }
 }
 
-// Menu 1
+/* Menu 1 */
 .menu1
 {
     @include menu1;
@@ -134,7 +134,7 @@ section
     }
 }
 
-// icon
+/* icon */
 .icon_music
 {
     .fas
@@ -145,7 +145,7 @@ section
     }
 }
 
-// Menu 2
+/* Menu 2 */
 .menu2
 {
     @include menu2;
@@ -156,7 +156,7 @@ section
     }
 }
 
-// Menu 3
+/* Menu 3 */
 .menu3
 {
     @include menu3;
@@ -172,7 +172,7 @@ section
     }
 }
 
-// Menu 4
+/* Menu 4 */
 .menu4
 {
     @include menu4;
@@ -188,14 +188,14 @@ section
     }
 }
 
-//aside
+/* aside */
 aside
 {
     @include aside;
     @include flex_column;
 }
 
-// loading dots
+/* loading dots */
 .loading
 {
     @include aside_h2;
@@ -209,18 +209,15 @@ aside
     .point2
     {
         animation-delay: 0.4s;
-        
     }
 
     .point3
     {
         animation-delay: 0.8s;
-        
     }
 }
 
-
-// éléments généraux des pages supplémentaires
+/* éléments généraux des pages supplémentaires */
 .title
 {
     border: none;
@@ -268,32 +265,32 @@ aside
     margin: auto;
 }
 
-// décorations sous-titres menus
+/* décorations sous-titres menus */
 .line_left1
 {
     @include line_style1;
-    @include line_margin_left;
+    margin: $line_margin_left;
 }
 
 .line_right1
 {
     @include line_style1;
-    @include line_margin_right;
+    margin: $line_margin_right;
 }
 
 .line_left2
 {
     @include line_style2;
-    @include line_margin_left;
+    margin: $line_margin_left;
 }
 
 .line_right2
 {
     @include line_style2;
-    @include line_margin_right;
+    margin: $line_margin_right;
 }
 
-// éléments page 1
+/* éléments page 1 */
 .page1
 {
     @include menu1;
@@ -315,7 +312,7 @@ aside
     }
 }
 
-// éléments page 2
+/* éléments page 2 */
 .page2
 {
     @include menu2;
@@ -332,7 +329,7 @@ aside
     }
 }
 
-// éléments page 3
+/* éléments page 3 */
 .page3
 {
     @include menu3;
@@ -349,7 +346,7 @@ aside
     }
 }
 
-// éléments page 4
+/* éléments page 4 */
 .page4
 {
     @include menu4;
@@ -366,7 +363,7 @@ aside
     }
 }
 
-// page 5
+/* page 5 */
 .page5
 {
     @include mentions;
@@ -379,7 +376,7 @@ aside
     }
 }
      
-// Dégradés couleur
+/* Dégradés couleur */
 .degrade1
 {
     background-image: linear-gradient(0.25turn, $second_menu 30%, $second_menu_degraded 70%);
@@ -399,11 +396,11 @@ aside
     @include degraded($sixth_font);
 }
 
-// Animations soulignage
-// border généraux
+/* Animations soulignage */
+/* border généraux */
 .border 
 {
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     transition: $transition;
 
@@ -413,32 +410,32 @@ aside
     }
 }
 
-// border page 1
+/* border page 1 */
 .border1 
 {
     @include underline($first_menu, $first_note_color);
 }
 
-// border page 2
-//border 1
+/* border page 2 */
+/* border 1 */
 .border2 
 {
     @include underline($second_menu, $second_menu);
 }
 
-// border 2
+/* border 2 */
 .border3 
 {
     @include underline($second_menu2, $second_menu2);
 }
 
-// border 3
+/* border 3 */
 .border4 
 {
     @include underline($second_menu3, $second_menu3);
 }
 
-// border page 3
+/* border page 3 */
 .border5 
 {
     @include underline($third_fouth_page, $third_menu_degraded1);
@@ -454,14 +451,14 @@ aside
     @include underline($third_fouth_page, $third_menu_degraded3);
 }
 
-// border page 4
+/* border page 4 */
 .border8
 {
     @include underline($third_fouth_page, $fourth_menu_degraded2);
 }
   
-// responsive
-// écrans moins de 720 px
+/* responsive */
+/* écrans moins de 720 px */
 @media #{$small_screen}
 {
     section
@@ -515,7 +512,7 @@ aside
     }
 }
 
-// écrans de plus de 720 px et moins de 1024px
+/* écrans de plus de 720 px et moins de 1024px */
 @media #{$medium_screen}
 {
         .line
@@ -539,7 +536,7 @@ aside
     }
 }
 
-// format landscape
+/* format landscape */
 @media #{$landscape}
 {
     footer

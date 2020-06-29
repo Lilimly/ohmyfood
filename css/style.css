@@ -1,3 +1,35 @@
+@charset "UTF-8";
+/* fonts */
+/* colors */
+/* backgrounds colors */
+/* fonts colors */
+/* degraded colors */
+/* icon colors */
+/* dots shadow animation */
+/* box shadow */
+/* animation wiggle */
+/* animation border */
+/* padding pages */
+/* margin lines menu */
+/* Paramètres flex */
+/* Paramètres header */
+/* Paramètres main */
+/* paramètres section */
+/* Paramètres menu 1 */
+/* Paramètres menu 2 */
+/* Paramètres menu 3 */
+/* Paramètres menu 4 */
+/* Paramètres a */
+/* Paramètres icon_music */
+/* Paramètres dégradés */
+/* dégradé note */
+/* Paramètres généraux pages des menus */
+/* décorations lignes */
+/* soulignage */
+/* Paramètres aside */
+/* Paramètres mentions légales */
+/* Paramètres footer */
+/* keyframes wiggle */
 @keyframes wiggle {
   25% {
     transform: translateX(5%);
@@ -7,6 +39,7 @@
   }
 }
 
+/* keyframes dots */
 @keyframes dots {
   0%, 25% {
     opacity: 0;
@@ -25,6 +58,11 @@
   }
 }
 
+/* écrans moins de 720 px */
+/* écrans de plus de 720 px et moins de 1024px */
+/* landscape */
+/* éléments relatif à l'ensemble des pages */
+/* styles généraux */
 body {
   margin: auto;
 }
@@ -42,6 +80,7 @@ h3 {
   font-weight: normal;
 }
 
+/* header */
 header {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3em;
@@ -63,6 +102,7 @@ header h1 {
   justify-content: center;
 }
 
+/* footer */
 footer {
   margin: auto;
   height: 60px;
@@ -85,10 +125,13 @@ footer .contact {
   padding: 0px 30px 0px 30px;
 }
 
+/* animations footer */
 .anim:hover {
   animation: wiggle 150ms infinite ease-in-out;
 }
 
+/* éléments page d'accueil */
+/* éléments généraux */
 a {
   color: #fdcb46;
   text-decoration: none;
@@ -100,6 +143,7 @@ a {
   flex-direction: column;
 }
 
+/* main */
 main {
   background-color: #ffffff;
   margin: auto;
@@ -123,6 +167,7 @@ main {
   font-size: 1.9em;
 }
 
+/* section */
 section {
   width: 290px;
   height: 360px;
@@ -134,6 +179,7 @@ section {
   box-shadow: 0 0 20px #bbba;
 }
 
+/* Animation zoom */
 .zoom {
   transform: scale(0.8);
   opacity: 1;
@@ -145,6 +191,7 @@ section {
   opacity: 0.3;
 }
 
+/* Menu 1 */
 .menu1 {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -163,6 +210,7 @@ section {
   font-family: "Devonshire", cursive;
 }
 
+/* icon */
 .icon_music .fas {
   font-size: 2em;
   display: inline-block;
@@ -173,6 +221,7 @@ section {
   background-image: linear-gradient(0.25turn, #f04a5e, #f78f6a);
 }
 
+/* Menu 2 */
 .menu2 {
   background-color: #fff5fe;
   color: #c77412;
@@ -187,6 +236,7 @@ section {
   font-weight: 100;
 }
 
+/* Menu 3 */
 .menu3 {
   background-color: #f9f9f9;
   color: #2b91f8;
@@ -203,6 +253,7 @@ section {
   font-weight: 300;
 }
 
+/* Menu 4 */
 .menu4 {
   background-color: #fdfffd;
   color: #72bf56;
@@ -219,6 +270,7 @@ section {
   font-weight: 300;
 }
 
+/* aside */
 aside {
   background-color: #579c87;
   color: #fdcb46;
@@ -232,6 +284,7 @@ aside {
   flex-direction: column;
 }
 
+/* loading dots */
 .loading {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -253,6 +306,7 @@ aside {
   animation-delay: 0.8s;
 }
 
+/* éléments généraux des pages supplémentaires */
 .title {
   border: none;
   box-shadow: none;
@@ -297,16 +351,17 @@ aside {
   margin: auto;
 }
 
+/* décorations sous-titres menus */
 .line_left1 {
   display: inline-block;
-  height: 6px;
+  height: 8px;
   width: 220px;
   margin: auto auto auto 0px;
 }
 
 .line_right1 {
   display: inline-block;
-  height: 6px;
+  height: 8px;
   width: 220px;
   margin: auto 0px auto auto;
 }
@@ -325,6 +380,7 @@ aside {
   margin: auto 0px auto auto;
 }
 
+/* éléments page 1 */
 .page1 {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -345,6 +401,7 @@ aside {
   font-family: "Devonshire", cursive;
 }
 
+/* éléments page 2 */
 .page2 {
   background-color: #fff5fe;
   color: #c77412;
@@ -361,6 +418,7 @@ aside {
   color: #6e4ccc;
 }
 
+/* éléments page 3 */
 .page3 {
   background-color: #f9f9f9;
   color: #2b91f8;
@@ -376,6 +434,7 @@ aside {
   color: #000000;
 }
 
+/* éléments page 4 */
 .page4 {
   background-color: #fdfffd;
   color: #72bf56;
@@ -391,6 +450,7 @@ aside {
   color: #000000;
 }
 
+/* page 5 */
 .page5 {
   background-color: #fff5fe;
   color: #3c1218;
@@ -403,6 +463,7 @@ aside {
   text-align: left;
 }
 
+/* Dégradés couleur */
 .degrade1 {
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
   font-family: "Kurale", serif;
@@ -428,8 +489,10 @@ aside {
   color: transparent;
 }
 
+/* Animations soulignage */
+/* border généraux */
 .border {
-  display: inline-block;
+  display: inline;
   text-decoration: none;
   transition: background-size 0.5s;
 }
@@ -438,26 +501,32 @@ aside {
   background-size: 100% 100%;
 }
 
+/* border page 1 */
 .border1 {
   color: #3c1218;
   background: linear-gradient(to top, #f04a5e 0%, #f04a5e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* border page 2 */
+/* border 1 */
 .border2 {
   color: #c77412;
   background: linear-gradient(to top, #c77412 0%, #c77412 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* border 2 */
 .border3 {
   color: #a56799;
   background: linear-gradient(to top, #a56799 0%, #a56799 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* border 3 */
 .border4 {
   color: #6e4ccc;
   background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* border page 3 */
 .border5 {
   color: #000000;
   background: linear-gradient(to top, #0431df 0%, #0431df 10%, transparent 10.01%) no-repeat left bottom/0 100%;
@@ -473,11 +542,14 @@ aside {
   background: linear-gradient(to top, #0887fb 0%, #0887fb 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* border page 4 */
 .border8 {
   color: #000000;
   background: linear-gradient(to top, #bfff7e 0%, #bfff7e 10%, transparent 10.01%) no-repeat left bottom/0 100%;
 }
 
+/* responsive */
+/* écrans moins de 720 px */
 @media only screen and (max-width: 720px) {
   section {
     width: 260px;
@@ -521,6 +593,7 @@ aside {
   }
 }
 
+/* écrans de plus de 720 px et moins de 1024px */
 @media only screen and (max-width: 1024px) and (min-width: 720px) {
   .line {
     width: 30%;
@@ -541,6 +614,7 @@ aside {
   }
 }
 
+/* format landscape */
 @media (orientation: landscape) {
   footer {
     margin: auto;
