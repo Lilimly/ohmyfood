@@ -393,6 +393,7 @@ aside {
 
 .page1 .font1 {
   font-family: "Devonshire", cursive;
+  font-size: 2.5em;
 }
 
 /* éléments page 2 */
@@ -461,6 +462,7 @@ aside {
 .degrade1 {
   background-image: linear-gradient(0.25turn, #c77412 30%, #905bfd 70%);
   font-family: "Kurale", serif;
+  font-size: 2.5em;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -470,6 +472,7 @@ aside {
   line-height: 70px;
   background-image: linear-gradient(0.25turn, #0431df 30%, #518cf0 50%, #0887fb 20%);
   font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
@@ -478,6 +481,7 @@ aside {
 .degrade3 {
   background-image: linear-gradient(0.25turn, #3d9339, #bfff7e);
   font-family: "Kaushan Script", cursive;
+  font-size: 2.5em;
   background-clip: initial;
   -webkit-background-clip: text;
   color: transparent;
